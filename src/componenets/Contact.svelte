@@ -178,6 +178,11 @@
       display: flex;
       gap: 1.2rem;
       margin-bottom: 2.4rem;
+      font-size: 1.3rem;
+
+      label {
+        flex: 1 1 auto;
+      }
     }
   }
 
