@@ -8,6 +8,7 @@
     import cupra3 from "./assets/cupra-3.jpg"
     import cupra4 from "./assets/cupra-4.jpg"
     import cupra5 from "./assets/cupra-5.jpg"
+    import Footer from "./componenets/Footer.svelte";
 </script>
 <Header/>
 <Top/>
@@ -81,6 +82,8 @@
         </div>
     </div>
 </section>
+
+<Footer />
 
 <style>
     .dark-section {
