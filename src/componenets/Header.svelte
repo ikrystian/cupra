@@ -50,10 +50,11 @@
 
 <style lang="scss">
   header {
-    padding: 1.8rem 1.2rem;
+    padding: 1.98rem 1.2rem;
     display: flex;
     justify-content: space-between;
     gap: 1.2rem;
+    background-color: #F5F5F5;
   }
 
   .contact-details {
