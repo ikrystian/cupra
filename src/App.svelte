@@ -9,6 +9,7 @@
     import cupra4 from "./assets/cupra-4.jpg"
     import cupra5 from "./assets/cupra-5.jpg"
     import Footer from "./componenets/Footer.svelte";
+    import Contact from "./componenets/Contact.svelte";
 </script>
 <Header/>
 <Top/>
@@ -82,6 +83,8 @@
         </div>
     </div>
 </section>
+
+<Contact />
 
 <Footer />
 

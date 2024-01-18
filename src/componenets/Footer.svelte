@@ -46,7 +46,6 @@
         border-top: 1rem solid #fff;
     }
 
-
     .footer__container {
         border-top: 0.1rem solid #D5D5D5;
         padding: 1.2rem;
