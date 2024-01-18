@@ -17,7 +17,7 @@
     max-height: 400px;
     max-width: 100%;
     position: relative;
-    padding: 5%;
+    padding: 5% 1.2rem;
     display: flex;
     align-items: flex-end;
     > div {
@@ -27,7 +27,7 @@
       h2 {
         text-transform: uppercase;
         font-weight: 400;
-        opacity: 50%;
+        color: rgba(255, 255, 255, 0.50);
         font-size: 2rem;
         line-height: 1.2;
       }

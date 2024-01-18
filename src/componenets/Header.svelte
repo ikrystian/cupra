@@ -9,7 +9,7 @@
 </script>
 
 <header class="header">
-    <a href="#" class="logo-link">
+    <a href="/" class="logo-link">
         <svg class="logo" id="MARCA_POSITIVO_P2718" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.95 99.21">
             <defs>
                 <style>.cls-1 {
