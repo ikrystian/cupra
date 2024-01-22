@@ -1,6 +1,6 @@
 <script>
     import Swiper from 'swiper';
-    import { onMount } from "svelte";
+    import {onMount} from "svelte";
     import cupra1 from '../assets/cupra-slider-2.png';
     import cupra2 from '../assets/cupra-slider-1.png';
     import cupra3 from '../assets/cupra-slider-3.png';
@@ -9,65 +9,76 @@
     let slides = [];
 
     onMount(async () => {
-        
-        slides = [{
-            title: 'CUPRA Ateca',
-            image: cupra1,
-            description: 'CUPRA Ateca to pierwszy model marki CUPRA, który łączy w sobie sportowy charakter, wyjątkowy design i funkcjonalność. To samochód, który zapewnia niezapomniane wrażenia z jazdy, a jednocześnie jest gotowy na każdą przygodę.',
-            leasingInfo: 'Leasing już od 1 999 zł netto/mies.',
-            netRate: '1 999 zł',
-            price: '246 000 zł',
-        }, {
-            title: 'CUPRA Ateca',
-            image: cupra1,
-            description: 'CUPRA Ateca to pierwszy model marki CUPRA, który łączy w sobie sportowy charakter, wyjątkowy design i funkcjonalność. To samochód, który zapewnia niezapomniane wrażenia z jazdy, a jednocześnie jest gotowy na każdą przygodę.',
-            leasingInfo: 'Leasing już od 1 999 zł netto/mies.',
-            netRate: '1 999 zł',
-            price: '246 000 zł',
-        },
-        {
-            title: 'CUPRA Ateca',
-            image: cupra1,
-            description: 'CUPRA Ateca to pierwszy model marki CUPRA, który łączy w sobie sportowy charakter, wyjątkowy design i funkcjonalność. To samochód, który zapewnia niezapomniane wrażenia z jazdy, a jednocześnie jest gotowy na każdą przygodę.',
-            leasingInfo: 'Leasing już od 1 999 zł netto/mies.',
-            netRate: '1 999 zł',
-            price: '246 000 zł',
-        },
-        {
-            title: 'CUPRA Ateca',
-            image: cupra1,
-            description: 'CUPRA Ateca to pierwszy model marki CUPRA, który łączy w sobie sportowy charakter, wyjątkowy design i funkcjonalność. To samochód, który zapewnia niezapomniane wrażenia z jazdy, a jednocześnie jest gotowy na każdą przygodę.',
-            leasingInfo: 'Leasing już od 1 999 zł netto/mies.',
-            netRate: '1 999 zł',
-            price: '246 000 zł',
-        }]
+
+        slides = [
+            {
+                title: 'CUPRA Ateca',
+                image: cupra1,
+                description: 'Akumulator 58 kWh moc do 204 KM²',
+                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+                netRate: '1 999 zł',
+                price: '246 000 zł',
+            },
+            {
+                title: 'CUPRA Ateca',
+                image: cupra2,
+                description: 'Akumulator 58 kWh moc do 204 KM²',
+                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+                netRate: '1 999 zł',
+                price: '246 000 zł',
+            },
+            {
+                title: 'CUPRA Ateca',
+                image: cupra3,
+                description: 'Akumulator 58 kWh moc do 204 KM²',
+                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+                netRate: '1 999 zł',
+                price: '246 000 zł',
+            },
+            {
+                title: 'CUPRA Ateca',
+                image: cupra1,
+                description: 'Akumulator 58 kWh moc do 204 KM²',
+                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+                netRate: '1 999 zł',
+                price: '246 000 zł',
+            },
+            {
+                title: 'CUPRA Ateca',
+                image: cupra2,
+                description: 'Akumulator 58 kWh moc do 204 KM²',
+                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+                netRate: '1 999 zł',
+                price: '246 000 zł',
+            },
+            {
+                title: 'CUPRA Ateca',
+                image: cupra3,
+                description: 'Akumulator 58 kWh moc do 204 KM²',
+                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+                netRate: '1 999 zł',
+                price: '246 000 zł',
+            }
+        ]
 
         mySwiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            loop: true,
+            initialSlide: 1,
             spaceBetween: 30,
             centeredSlides: true,
             breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                    centeredSlides: true,
-                },
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 30,
+                    spaceBetween: 60,
                     centeredSlides: true,
                 },
+
             }
         });
     });
 </script>
 
-<div style="max-width: 100%; overflow: hidden;">
+<div class="slider">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             {#each slides as slide}
@@ -75,8 +86,8 @@
                     <h2>{slide.title}</h2>
                     <img src={slide.image} alt="">
                     <p>{slide.description}</p>
-                    <div>
-                        <div>
+                    <div class="slider__boxes">
+                        <div style="max-width: 140px;">
                             <span>{slide.leasingInfo}</span>
                         </div>
                         <div>
@@ -88,7 +99,7 @@
                             <strong>{slide.price}</strong>
                         </div>
                     </div>
-                    <a href="#contact">Umow jazdę próbna</a>
+                    <a href="#contact" class="slider__button btn btn--secondary">Umow jazdę próbna</a>
                 </div>
             {/each}
         </div>
@@ -105,6 +116,32 @@
 
   .swiper-slide {
     padding-inline: 1.2rem;
+    transition: opacity 0.2s ease-in-out, fitler 0.2s ease-in-out;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      padding: 5.4rem 2.4rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+      padding: 10.4rem 2.4rem;
+    }
+
+    &:not(.swiper-slide-active) {
+      opacity: 0.3;
+      filter: grayscale(1);
+    }
+
+    img {
+      margin-bottom: 3.8rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      font-weight: 300;
+      margin-bottom: 4.8rem;
+    }
 
     h2 {
       font-weight: 400;
@@ -123,6 +160,37 @@
       @media screen and (min-width: 1400px) {
         font-size: 4.8rem;
       }
+    }
+  }
+
+  .slider {
+    max-width: 100%;
+    overflow: hidden;
+
+
+
+    &__boxes {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      display: flex;
+      gap: 4.8rem;
+      margin-bottom: 4.8rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    strong {
+      font-weight: 500;
+      line-height: 2.4rem;
+      font-size: 2rem;
+    }
+
+    span {
+      display: block;
+    }
+
+    &__button {
+      display: inline-block;
     }
   }
 </style>
