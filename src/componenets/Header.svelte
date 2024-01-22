@@ -50,6 +50,10 @@
 
 <style lang="scss">
   .header {
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    right: 0;
     padding: 1.98rem 1.2rem;
     display: flex;
     justify-content: space-between;

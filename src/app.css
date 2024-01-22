@@ -1,87 +1,102 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.4;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  --color-1: #242221;
+    --color-1: #242221;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 .btn {
-  display: flex;
-  padding: 1.2rem 1.2rem;
-  border: 1px solid transparent;
-  text-decoration: none;
-  color: var(--color-1);
+    display: flex;
+    padding: 1.2rem 1.2rem;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: var(--color-1);
+
+    @media (min-width: 768px) {
+        padding-inline: 2.4rem;
+    }
 }
 
 
 .btn--primary {
-  border: 1px solid #190F14;
+    border: 1px solid #190F14;
 }
 
 .btn--secondary {
-  color: #fff;
-  background-color: #190F14;
+    color: #fff;
+    background-color: #190F14;
 }
 
 .btn--icon {
-  width: 3.2rem;
-  height: 3.2rem;
-  min-width: 3.2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    min-width: 3.2rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0;
 
-  svg {
-    path {
-      fill: #fff;
+    svg {
+        path {
+            fill: #fff;
+        }
     }
-  }
 }
 
 .btn--primary.btn--icon {
-  color: #190F14;
-  background-color: #fff;
-  border-color: transparent;
+    color: #190F14;
+    background-color: #fff;
+    border-color: transparent;
 
-  svg path {
-    fill: #000;
-  }
+    svg path {
+        fill: #000;
+    }
 }
 
 
 .btn--dark {
-  background-color: #DBD3CB;
-  color: #000;
-  display: inline-flex;
+    background-color: #DBD3CB;
+    color: #000;
+    display: inline-flex;
+}
+
+.container {
+
+    max-width: 100%;
+    margin-inline: auto;
+    width: 768px;
+
+    @media screen and (min-width: 1400px) {
+        width: 1372px;
+    }
 }
