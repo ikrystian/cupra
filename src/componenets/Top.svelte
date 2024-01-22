@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Top from '../assets/top.png'
 </script>
 <section class="top">

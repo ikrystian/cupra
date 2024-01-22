@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import Nav from "./Nav.svelte";
 
     let showNav = false;
@@ -27,20 +27,20 @@
                   transform="translate(-74.47 -248.03)"/>
         </svg>
     </a>
-    {#if showNav}
-        <Nav/>
-    {/if}
-    <div style="display: flex; gap: 1.6rem; align-items: center; flex: 1 1 auto; justify-content: flex-end">
-        <button class="btn btn--secondary btn--icon">
+    <Nav/>
+
+    <div class="header__nav-content">
+        <button class="btn btn--secondary btn--icon phone-button">
             <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                 <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
             </svg>
         </button>
-        <div class="header__buttons" style="display: none;">
+        <a class="header__phone" href="tel:+48 585066565">+48 58 506 65 65</a>
+        <div class="header__buttons">
             <a href="#" class="btn btn--primary">Zapytaj o ofertę</a>
             <a href="#" class="btn btn--secondary">Umów na jazdę próbną</a>
         </div>
-        <button class="btn btn--primary btn--icon" on:click={toggleMenu}>
+        <button class="btn btn--primary mobile-nav-button btn--icon" on:click={toggleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
                 <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
             </svg>
@@ -49,21 +49,50 @@
 </header>
 
 <style lang="scss">
-  header {
+  .header {
     padding: 1.98rem 1.2rem;
     display: flex;
     justify-content: space-between;
     gap: 1.2rem;
     background-color: #F5F5F5;
+
+    &__buttons {
+      display: none;
+
+      @media screen and (min-width: 678px) {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+      }
+    }
+
+    &__nav-content {
+      display: flex;
+      gap: 1.6rem;
+      align-items: center;
+      flex: 1 1 auto;
+      justify-content: flex-end;
+
+      @media screen and (min-width: 1051px) {
+        flex: unset;
+        gap: 4.8rem;
+      }
+    }
+
+    &__phone {
+      display: none;
+
+      @media screen and (min-width: 750px) {
+        display: block;
+        color: var(--color-1);
+        text-decoration: none;
+      }
+    }
   }
 
-  .contact-details {
-    display: none;
-
-    @media screen and (min-width: 578px) {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
+  .phone-button {
+    @media screen and (min-width: 750px) {
+      display: none;
     }
   }
 
@@ -73,5 +102,11 @@
 
   .logo {
     min-width: 18.2rem
+  }
+
+  .mobile-nav-button {
+    @media screen and (min-width: 1171px) {
+        display: none;
+    }
   }
 </style>
