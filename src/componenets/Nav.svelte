@@ -23,6 +23,7 @@
   @media screen and (max-width: 1170px) {
     nav {
       position: fixed;
+      display: none;
       top: 70px;
       left: 0;
       right: 0;
