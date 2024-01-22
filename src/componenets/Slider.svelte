@@ -4,6 +4,7 @@
     import cupra1 from '../assets/cupra-slider-2.png';
     import cupra2 from '../assets/cupra-slider-1.png';
     import cupra3 from '../assets/cupra-slider-3.png';
+
     let mySwiper;
 
     onMount(() => {
@@ -18,26 +19,27 @@
     });
 </script>
 
+<div style="max-width: 100%; overflow: hidden;">
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-                <h2>Leon</h2>
-                <img src={cupra1} alt="">
-                <p>Akumulator 58 kWh do 204 KM</p>
+            <h2>Leon</h2>
+            <img src={cupra1} alt="">
+            <p>Akumulator 58 kWh do 204 KM</p>
+            <div>
                 <div>
-                    <div>
-                        <span>Doostępny w leasingu z 0% opłaty własnej</span>
-                    </div>
-                    <div>
-                        <span>Rata netto/mies. od*</span>
-                        <strong>1943 zł</strong>
-                    </div>
-                    <div>
-                        <span>Cena brutto już od</span>
-                        <strong>179 600 zł</strong>
-                    </div>
+                    <span>Doostępny w leasingu z 0% opłaty własnej</span>
                 </div>
-                <a href="#">Umow jazdę próbna</a>
+                <div>
+                    <span>Rata netto/mies. od*</span>
+                    <strong>1943 zł</strong>
+                </div>
+                <div>
+                    <span>Cena brutto już od</span>
+                    <strong>179 600 zł</strong>
+                </div>
+            </div>
+            <a href="#">Umow jazdę próbna</a>
         </div>
 
         <div class="swiper-slide">
@@ -84,23 +86,24 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </div>
-
+</div>
 
 <style lang="scss">
-    @import 'swiper/swiper-bundle.css';
+  @import 'swiper/swiper-bundle.css';
 
-    .swiper-container {
-        padding-block: 2rem;
+  .swiper-container {
+    padding-block: 2rem;
+    position: relative;
+  }
+
+  .swiper-slide {
+    padding-inline: 1.2rem;
+
+    h2 {
+      font-weight: 400;
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
     }
-
-    .swiper-slide {
-        padding-inline: 1.2rem;
-
-        h2 {
-          font-weight: 400;
-          text-align: center;
-          font-size: 2.4rem;
-          margin-bottom: 2rem;
-        }
-    }
+  }
 </style>
