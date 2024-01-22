@@ -169,8 +169,21 @@
       margin-top: 2.4rem;
       font-size: 1.3rem;
 
+      @media screen and (min-width: 578px) {
+        margin-top: 2.4rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        margin-top: 3.6rem;
+      }
+
+      @media screen and (min-width: 1100px) {
+        margin-top: 4.8rem;
+      }
+
       p {
         margin-bottom: 2.4rem;
+        font-size: 1.3rem;
 
         a {
           color: var(--primary-color);
@@ -196,6 +209,7 @@
         color: #242221;
         padding-block: 1.2rem;
         font-size: 1.6rem;
+        background-color: transparent;
 
         &:focus {
           outline: 0;
@@ -229,6 +243,10 @@
     position: relative;
     align-items: center;
 
+    @media screen and (min-width: 768px) {
+      height: 14.5rem;
+    }
+
     img {
       width: auto;
       height: auto;
@@ -241,12 +259,16 @@
 
   .car-select__item span {
     white-space: nowrap;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #F5F5F5;
     position: absolute;
     top: 50%;
     left: 50%;
     padding: 0.4rem 0.8rem;
     transform: translateY(-50%);
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.6rem;
+    }
   }
 
   .car-select__item img {
