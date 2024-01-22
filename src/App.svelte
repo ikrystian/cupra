@@ -15,36 +15,42 @@
 <Top/>
 
 <section class="dark-section">
-    <h2>Wypróbuj</h2>
-    <p>
-        Zobacz, poczuj i przekonaj się, czym jest CUPRA. Poznaj
-        samochody, które są wyjątkowym połączeniem technologii,
-        mocy, elegancji i komfortu.
-    </p>
+    <div class="container">
+        <h2>Wypróbuj</h2>
+        <p>
+            Zobacz, poczuj i przekonaj się, czym jest CUPRA. Poznaj
+            samochody, które są wyjątkowym połączeniem technologii,
+            mocy, elegancji i komfortu.
+        </p>
 
-    <div class="dark-section-gallery">
-        <div class="dark-section-gallery__item">
-            <figure>
-                <img src={cupra1} alt="cupra 1">
-                <figcaption>Design inspirowany wyścigami, stworzony z niezwykłą dbałością o detale.</figcaption>
-            </figure>
+        <div class="dark-section-gallery">
+            <div class="dark-section-gallery__item">
+                <figure>
+                    <div>
+                        <img src={cupra1} alt="cupra 1">
+                    </div>
+                    <figcaption>Design inspirowany wyścigami, stworzony z niezwykłą dbałością o detale.</figcaption>
+                </figure>
+            </div>
+            <div class="dark-section-gallery__item">
+                <figure>
+                    <div>
+                        <img src={cupra2} alt="cupra 2">
+                    </div>
+                    <figcaption>Podróżuj z rozmachem bez kompromisów.</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="dark-section-gallery__item">
-            <figure>
-                <img src={cupra2} alt="cupra 2">
-                <figcaption>Podróżuj z rozmachem bez kompromisów.</figcaption>
-            </figure>
-        </div>
+
+        <!--    obrazki w gridzie-->
+        <h3>Tylko dla odważnych</h3>
+        <p>
+            Model CUPRA, który idealnie wpisuje się DNA marki.
+            Unikalny SUVm cope, wyjątkowy, odważny i innowacyjny -
+            zapewni Ci to, co najlepsze w marce CUPRA.
+        </p>
+        <a href="#" class="btn btn--dark">Umów jazdę próbną</a>
     </div>
-
-    <!--    obrazki w gridzie-->
-    <h2>Tylko dla odważnych</h2>
-    <p>
-        Model CUPRA, który idealnie wpisuje się DNA marki.
-        Unikalny SUVm cope, wyjątkowy, odważny i innowacyjny -
-        zapewni Ci to, co najlepsze w marce CUPRA.
-    </p>
-    <a href="#" class="btn btn--dark">Umów jazdę próbną</a>
 </section>
 
 <section>
@@ -53,9 +59,9 @@
 
 <section class="dark-section">
     <div class="">
-    <figure>
-        <img src={cupra3} alt="">
-    </figure>
+        <figure>
+            <img src={cupra3} alt="">
+        </figure>
         <div>
             <span>Technologia</span>
             <h2>Poczuj pełna wolność jazdy dzieki licznym innowacjom.</h2>
@@ -84,38 +90,146 @@
     </div>
 </section>
 
-<Contact />
+<Contact/>
 
-<Footer />
+<Footer/>
 
-<style>
-    .dark-section {
-        background-color: #1B1B1B;
-        color: #fff;
-        padding: 3rem 1.2rem;
+<style lang="scss">
+  .dark-section {
+    background-color: #1B1B1B;
+    color: #fff;
+    padding: 3rem 1.2rem;
+
+    @media screen and (min-width: 768px) {
+      padding: 5% 2.4rem
+    }
+  }
+
+  h2, h3 {
+    font-weight: 300;
+    font-size: 2.8rem;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      font-size: 3.6rem;
+      max-width: 553px;
     }
 
-    h2 {
-        font-weight: 400;
-        font-size: 2.8rem;
-        margin-bottom: 1.6rem;
+    @media screen and (min-width: 1100px) {
+      font-size: 4.8rem;
     }
 
-    h2 + p {
-        margin-bottom: 2.2rem;
+    @media screen and (min-width: 1400px) {
+      font-size: 6rem;
     }
 
-    p {
-        color: rgba(255, 255, 255, 0.50);
+    + p {
+      margin-bottom: 2.2rem;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 3.6rem;
+        max-width: 553px;
+      }
+
+      @media screen and (min-width: 1100px) {
+        margin-bottom: 4.8rem;
+      }
+
+      @media screen and (min-width: 1400px) {
+        margin-bottom: 6.8rem;
+      }
+
+    }
+  }
+
+  h3 {
+    @media screen and (min-width: 1400px) {
+      font-size: 4.8rem;
+      margin-top: -20rem;
     }
 
-    .dark-section-gallery img {
-        margin-bottom: 2rem;
-    }
-
-    .dark-section-gallery figcaption {
-        color: rgba(255, 255, 255, 0.50);
+    + p {
+      @media screen and (min-width: 1400px) {
         margin-bottom: 3.2rem;
-        display: block;
+      }
     }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 2rem;
+
+  }
+
+
+  .dark-section-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 3.2rem;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    @media screen and (min-width: 1400px) {
+      grid-template-columns: 787px 553px;
+    }
+
+
+    img {
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        transition: transform 3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1)
+        }
+      }
+    }
+
+    figcaption {
+      margin-top: 2rem;
+
+      @media screen and (min-width: 1100px) {
+        margin-top: 3.2rem;
+      }
+    }
+
+    &__item {
+      &:nth-child(1) {
+        figure > div {
+          @media screen and (min-width: 768px) {
+            position: relative;
+            aspect-ratio: 787 / 519;
+            overflow: hidden;
+          }
+        }
+      }
+
+
+      &:nth-child(2) {
+        figure > div {
+          @media screen and (min-width: 768px) {
+            margin-top: 6rem;
+            position: relative;
+            aspect-ratio: 553 / 792;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+
+  .dark-section-gallery figcaption {
+    color: rgba(255, 255, 255, 0.50);
+    margin-bottom: 3.2rem;
+    display: block;
+  }
 </style>
