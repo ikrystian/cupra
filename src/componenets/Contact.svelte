@@ -55,7 +55,7 @@
             <label class="form__label" for="phone">Nr. telefonu *</label>
             <input type="tel" id="phone" class="form__input" placeholder="Nr. telefonu *">
         </div>
-        <p>* Pole wymagane</p>
+        <p class="form__group">* Pole wymagane</p>
         <div class="form__description">
             <p>Wysłanie uzupełnionego formularza oznacza Twoją zgodę na kontakt w celu przedstawienia informacji
                 handlowej w wybrany przez Ciebie sposób w związku
@@ -68,7 +68,12 @@
         <div class="form__privacy">
             <div class="fake-checkbox">
                 <input type="checkbox" id="privacy1">
-                <label for="privacy1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></label>
+                <label for="privacy1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                    </svg>
+                </label>
             </div>
             <label for="privacy1">Zgadzam się na przetwarzanie moich danych osobowych przez Plichta spółka z ograniczoną
                 odpowiedzialnością Spółka Komandytowa w celu przedstawienia mi informacji marketingowych i handlowych
@@ -79,7 +84,12 @@
         <div class="form__privacy">
             <div class="fake-checkbox">
                 <input type="checkbox" id="privacy2">
-                <label for="privacy2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></label>
+                <label for="privacy2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                    </svg>
+                </label>
             </div>
             <label for="privacy2">E-mail</label>
         </div>
@@ -87,7 +97,12 @@
         <div class="form__privacy">
             <div class="fake-checkbox">
                 <input type="checkbox" id="privacy3">
-                <label for="privacy3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></label>
+                <label for="privacy3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                    </svg>
+                </label>
             </div>
             <label for="privacy3">Telefon</label>
         </div>
@@ -95,7 +110,12 @@
         <div class="form__privacy">
             <div class="fake-checkbox">
                 <input type="checkbox" id="privacy4">
-                <label for="privacy4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg></label>
+                <label for="privacy4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                    </svg>
+                </label>
             </div>
             <label for="privacy4">Wiadomość SMS/MMS</label>
         </div>
@@ -120,6 +140,8 @@
 <style lang="scss">
   .contact {
     padding: 2rem 1.2rem;
+    background-color: #F5F5F5;
+    border-bottom: 1rem solid #fff;
 
     &__subtitle {
       text-align: center;
@@ -133,11 +155,15 @@
       margin-bottom: 3.2rem;
     }
   }
-  .form {
 
+  .form {
     ::placeholder {
       color: var(--color-1)
     }
+
+    max-width: 100%;
+    width: 670px;
+    margin-inline: auto;
 
     &__description {
       margin-top: 2.4rem;
@@ -156,6 +182,9 @@
       display: flex;
       flex-direction: column;
       margin-top: 3rem;
+      width: 553px;
+      margin-inline: auto;
+      max-width: 100%;
 
       label {
         font-size: 0;
@@ -187,6 +216,9 @@
   }
 
   .car-select {
+    width: 553px;
+    margin-inline: auto;
+    max-width: 100%;
   }
 
   .car-select__item {
@@ -196,6 +228,11 @@
     display: flex;
     position: relative;
     align-items: center;
+
+    img {
+      width: auto;
+      height: auto;
+    }
 
     &:not(:first-of-type) {
       display: none;
