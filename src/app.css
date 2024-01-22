@@ -90,6 +90,13 @@ img {
     display: inline-flex;
 }
 
+.btn--darker {
+    background-color: #fff;
+    color: #000;
+    display: inline-flex;
+}
+
+
 .container {
 
     max-width: 100%;

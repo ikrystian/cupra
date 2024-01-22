@@ -58,34 +58,36 @@
 </section>
 
 <section class="dark-section">
-    <div class="">
-        <figure>
-            <img src={cupra3} alt="">
-        </figure>
-        <div>
-            <span>Technologia</span>
-            <h2>Poczuj pełna wolność jazdy dzieki licznym innowacjom.</h2>
-            <a href="#" class="btn btn--primary">Umów jazdę próbną</a>
+    <div class="container">
+        <div class="dark-section__row ">
+            <figure>
+                <img src={cupra3} alt="">
+            </figure>
+            <div class="dark-section__content-box">
+                <span>Technologia</span>
+                <h2>Poczuj pełna wolność jazdy dzieki licznym innowacjom.</h2>
+                <a href="#" class="btn btn--darker">Umów jazdę próbną</a>
+            </div>
         </div>
-    </div>
-    <div class="">
-        <figure>
-            <img src={cupra4} alt="">
-        </figure>
-        <div>
-            <span>Potęga Designu</span>
-            <h2>Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.</h2>
-            <a href="#" class="btn btn--primary">Umów jazdę próbną</a>
+        <div class="dark-section__row">
+            <figure>
+                <img src={cupra4} alt="">
+            </figure>
+            <div class="dark-section__content-box">
+                <span>Potęga Designu</span>
+                <h2>Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.</h2>
+                <a href="#" class="btn btn--darker">Umów jazdę próbną</a>
+            </div>
         </div>
-    </div>
-    <div class="">
-        <figure>
-            <img src={cupra4} alt="">
-        </figure>
-        <div>
-            <span>Design wnętrza</span>
-            <h2>Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu CUPRY.</h2>
-            <a href="#" class="btn btn--primary">Umów jazdę próbną</a>
+        <div class="dark-section__row">
+            <figure>
+                <img src={cupra5} alt="">
+            </figure>
+            <div class="dark-section__content-box">
+                <span>Design wnętrza</span>
+                <h2>Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu CUPRY.</h2>
+                <a href="#" class="btn btn--darker">Umów jazdę próbną</a>
+            </div>
         </div>
     </div>
 </section>
@@ -102,6 +104,77 @@
 
     @media screen and (min-width: 768px) {
       padding: 5% 2.4rem
+    }
+
+    &__row {
+      position: relative;
+      margin-bottom: 2rem;
+
+      @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+        margin-bottom: 5rem;
+      }
+
+      @media screen and (min-width: 1100px) {
+        display: flex;
+        gap: 1.2rem;
+        margin-bottom: 7.5rem;
+      }
+      @media screen and (min-width: 1400px) {
+        margin-bottom: 15rem;
+      }
+
+      &:nth-child(even) {
+        @media screen and (min-width: 1100px) {
+          flex-direction: row-reverse;
+
+          .dark-section__content-box {
+            left: 0;
+            right: auto;
+          }
+        }
+      }
+
+      figure {
+        position: relative;
+        width: 787px;
+        display: block;
+        overflow: hidden;
+      }
+    }
+
+    &__content-box {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 670px;
+      background-color: #1B1B1B;
+      padding-inline: 11.7rem;
+      padding-bottom: 6.4rem;
+
+      span {
+        display: block;
+        margin-bottom: 0.8rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        text-transform: none;
+        margin-bottom: 1.6rem;
+
+        @media screen and (min-width: 1100px) {
+          margin-bottom: 2.4rem;
+        }
+
+        @media screen and (min-width: 1100px) {
+          font-size: 3.9rem;
+          line-height: 4.6rem;
+          margin-bottom: 3.6rem;
+        }
+      }
     }
   }
 
