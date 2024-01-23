@@ -69,7 +69,7 @@
       initialSlide: 1,
       spaceBetween: 30,
       autoplay: {
-        delay: 3000,
+        delay: 5000,
       },
       centeredSlides: true,
       breakpoints: {
@@ -138,7 +138,7 @@
 
     &:not(.swiper-slide-active) {
       opacity: 0.3;
-      filter: grayscale(1);
+      filter: grayscale(1) blur(2px);
     }
 
     img {
@@ -175,8 +175,6 @@
   .slider {
     max-width: 100%;
     overflow: hidden;
-
-
 
     &__boxes {
       font-size: 1.4rem;
