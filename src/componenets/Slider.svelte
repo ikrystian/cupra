@@ -84,7 +84,7 @@
             {#each slides as slide}
                 <div class="swiper-slide">
                     <h2>{slide.title}</h2>
-                    <img src={slide.image} alt="">
+                    <img  loading="lazy"  src={slide.image} alt="">
                     <p>{slide.description}</p>
                     <div class="slider__boxes">
                         <div style="max-width: 140px;">

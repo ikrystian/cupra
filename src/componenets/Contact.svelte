@@ -121,7 +121,7 @@
                             data-id={car.id}
                             on:click={select(car.id)}
                     >
-                        <img src={car.image} alt=""/>
+                        <img  loading="lazy"  src={car.image} alt=""/>
                         <span>{car.name}</span>
                     </button>
                 {/each}

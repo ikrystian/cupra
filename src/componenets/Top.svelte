@@ -2,7 +2,7 @@
     import Top from '../assets/top.png'
 </script>
 <section class="top">
-    <img src={Top} alt="">
+    <img loading="lazy" src={Top} alt="">
     <div class="container">
         <div>
             <h2><span>Cupra</span> Formentor</h2>

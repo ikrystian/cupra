@@ -27,7 +27,7 @@
             <div class="dark-section-gallery__item">
                 <figure>
                     <div>
-                        <img src={cupra1} alt="cupra 1">
+                        <img  loading="lazy"  src={cupra1} alt="cupra 1">
                     </div>
                     <figcaption>Design inspirowany wyścigami, stworzony z niezwykłą dbałością o detale.</figcaption>
                 </figure>
@@ -35,7 +35,7 @@
             <div class="dark-section-gallery__item">
                 <figure>
                     <div>
-                        <img src={cupra2} alt="cupra 2">
+                        <img  loading="lazy"  src={cupra2} alt="cupra 2">
                     </div>
                     <figcaption>Podróżuj z rozmachem bez kompromisów.</figcaption>
                 </figure>
@@ -61,7 +61,7 @@
     <div class="container">
         <div class="dark-section__row ">
             <figure>
-                <img src={cupra3} alt="">
+                <img  loading="lazy"  src={cupra3} alt="">
             </figure>
             <div class="dark-section__content-box">
                 <span>Technologia</span>
@@ -71,7 +71,7 @@
         </div>
         <div class="dark-section__row">
             <figure>
-                <img src={cupra4} alt="">
+                <img  loading="lazy"  src={cupra4} alt="">
             </figure>
             <div class="dark-section__content-box">
                 <span>Potęga Designu</span>
@@ -81,7 +81,7 @@
         </div>
         <div class="dark-section__row">
             <figure>
-                <img src={cupra5} alt="">
+                <img  loading="lazy"  src={cupra5} alt="">
             </figure>
             <div class="dark-section__content-box">
                 <span>Design wnętrza</span>
