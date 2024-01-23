@@ -1,4 +1,24 @@
 <script>
+    import * as yup from 'yup';
+    import {Form, Message} from 'svelte-yup';
+
+
+    let schema = yup.object().shape({
+        name: yup.string().required('Podanie imienia jest konieczne').max(30).label('Imię'),
+        surname: yup.string().label('Nazwisko'),
+        email: yup.string().email('Podaj poprawny adres email').required('Podanie adresu email jest konieczne').label('E-mail'),
+        phone: yup.string().required('Podanie numeru telefonu jest konieczne').label('Numer telefonu'),
+    });
+
+    let fields = { name: '', surname: '', email: '', phone: '' };
+    let submitted = false;
+    let isValid;
+
+    const  formSubmit = () => {
+        submitted = true;
+        isValid = schema.isValidSync(fields);
+    }
+
     import cupraList1 from "../assets/cupra-list-1.png";
     import cupraList2 from "../assets/cupra-list-2.png";
     import cupraList3 from "../assets/cupra-list-3.png";
@@ -7,12 +27,17 @@
 </script>
 <section class="section contact" id="contact">
     <div class="contact__container container">
-        <span class="contact__subtitle">Jazda probna</span>
-        <h2 class="contact__title">Umow się na bezpłatna jazdę próbna</h2>
+        <span class="contact__subtitle">Jazda próbna</span>
+        <h2 class="contact__title">Umów się na bezpłatna jazdę próbną</h2>
     </div>
 
-    <form class="form" action="">
+    {#if submitted && isValid}
+        <div class="alert" role="alert">
+            Wiadomość została wysłana. Dziękujemy! ❤️
+        </div>
+    {/if}
 
+    <Form class="form" {schema} {fields} submitHandler={formSubmit} {submitted}>
         <div class="car-select">
             <div class="car-select__item">
                 <img src={cupraList1} alt="">
@@ -38,22 +63,27 @@
 
         <div class="form__group">
             <label class="form__label" for="name">Imię *</label>
-            <input type="text" id="name" class="form__input" placeholder="Imię *">
+            <input type="text" id="name" class="form__input" placeholder="Imię *" bind:value={fields.name}>
+            <Message name="name"/>
         </div>
 
         <div class="form__group">
             <label class="form__label" for="surname">Nazwisko (opcjonalnie)</label>
-            <input type="text" id="surname" class="form__input" placeholder="Nazwisko (opcjonalnie)">
+            <input type="text" id="surname" class="form__input" placeholder="Nazwisko (opcjonalnie)"
+                   bind:value={fields.surnamme}>
+            <Message name="surname"/>
         </div>
 
         <div class="form__group">
             <label class="form__label" for="email">Adres e-mail*</label>
-            <input type="email" id="email" class="form__input" placeholder="Adres e-mail*">
+            <input type="email" id="email" class="form__input" placeholder="Adres e-mail*" bind:value={fields.email}>
+            <Message name="email"/>
         </div>
 
         <div class="form__group">
             <label class="form__label" for="phone">Nr. telefonu *</label>
-            <input type="tel" id="phone" class="form__input" placeholder="Nr. telefonu *">
+            <input type="tel" id="phone" class="form__input" placeholder="Nr. telefonu *" bind:value={fields.phone}>
+            <Message name="phone"/>
         </div>
         <p class="form__group">* Pole wymagane</p>
         <div class="form__description">
@@ -133,7 +163,7 @@
             <button class="btn btn--secondary">Umów jazdę próbną</button>
         </div>
 
-    </form>
+    </Form>
 
 </section>
 
@@ -210,6 +240,7 @@
         padding-block: 1.2rem;
         font-size: 1.6rem;
         background-color: transparent;
+        margin-bottom: 0.4rem;
 
         &:focus {
           outline: 0;
@@ -225,6 +256,7 @@
 
       label {
         flex: 1 1 auto;
+        cursor: pointer;
       }
     }
   }
@@ -308,5 +340,11 @@
         }
       }
     }
+  }
+
+  .alert {
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 </style>

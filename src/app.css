@@ -39,6 +39,7 @@ img {
     border: 1px solid transparent;
     text-decoration: none;
     color: var(--color-1);
+    cursor: pointer;
 
     @media (min-width: 768px) {
         padding-inline: 2.4rem;
