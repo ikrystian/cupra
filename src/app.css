@@ -70,7 +70,7 @@ img {
     &:hover, &:focus {
         background-color: #fff;
         color: #190F14;
-        border-color: 190F14;
+        border-color: #190F14;
     }
 }
 
