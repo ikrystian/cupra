@@ -421,7 +421,17 @@
         }
       }
     }
+    &:not(.active) {
+      .car-select__item {
+        &:hover {
+          border-color: #000;
 
+          img {
+            transform: translateX(-20px);
+          }
+        }
+      }
+    }
     &__item {
       border: 0.1rem solid #d5d5d5;
       border-top: 0;
@@ -433,6 +443,7 @@
       position: relative;
       align-items: center;
       cursor: pointer;
+      transition: border-color 0.2s ease-in-out;
 
       &:first-of-type {
         &::before {
