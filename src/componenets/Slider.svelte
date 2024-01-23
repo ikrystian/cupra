@@ -1,109 +1,118 @@
 <script>
-    import Swiper from 'swiper';
-    import {onMount} from "svelte";
-    import cupra1 from '../assets/cupra-slider-2.png';
-    import cupra2 from '../assets/cupra-slider-1.png';
-    import cupra3 from '../assets/cupra-slider-3.png';
+  import Swiper from 'swiper';
+  import {onMount} from "svelte";
+  import cupra1 from '../assets/cupra-slider-2.png';
+  import cupra2 from '../assets/cupra-slider-1.png';
+  import cupra3 from '../assets/cupra-slider-3.png';
+  import { Autoplay, Navigation } from 'swiper/modules'
+  let slides = [];
 
-    let mySwiper;
-    let slides = [];
+  onMount( () => {
 
-    onMount(async () => {
+    slides = [
+      {
+        title: 'CUPRA Ateca',
+        image: cupra1,
+        description: 'Akumulator 58 kWh moc do 204 KM²',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+        netRate: '1 999 zł',
+        price: '246 000 zł',
+      },
+      {
+        title: 'CUPRA Ateca',
+        image: cupra2,
+        description: 'Akumulator 58 kWh moc do 204 KM²',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+        netRate: '1 999 zł',
+        price: '246 000 zł',
+      },
+      {
+        title: 'CUPRA Ateca',
+        image: cupra3,
+        description: 'Akumulator 58 kWh moc do 204 KM²',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+        netRate: '1 999 zł',
+        price: '246 000 zł',
+      },
+      {
+        title: 'CUPRA Ateca',
+        image: cupra1,
+        description: 'Akumulator 58 kWh moc do 204 KM²',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+        netRate: '1 999 zł',
+        price: '246 000 zł',
+      },
+      {
+        title: 'CUPRA Ateca',
+        image: cupra2,
+        description: 'Akumulator 58 kWh moc do 204 KM²',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+        netRate: '1 999 zł',
+        price: '246 000 zł',
+      },
+      {
+        title: 'CUPRA Ateca',
+        image: cupra3,
+        description: 'Akumulator 58 kWh moc do 204 KM²',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
+        netRate: '1 999 zł',
+        price: '246 000 zł',
+      }
+    ]
 
-        slides = [
-            {
-                title: 'CUPRA Ateca',
-                image: cupra1,
-                description: 'Akumulator 58 kWh moc do 204 KM²',
-                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-                netRate: '1 999 zł',
-                price: '246 000 zł',
-            },
-            {
-                title: 'CUPRA Ateca',
-                image: cupra2,
-                description: 'Akumulator 58 kWh moc do 204 KM²',
-                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-                netRate: '1 999 zł',
-                price: '246 000 zł',
-            },
-            {
-                title: 'CUPRA Ateca',
-                image: cupra3,
-                description: 'Akumulator 58 kWh moc do 204 KM²',
-                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-                netRate: '1 999 zł',
-                price: '246 000 zł',
-            },
-            {
-                title: 'CUPRA Ateca',
-                image: cupra1,
-                description: 'Akumulator 58 kWh moc do 204 KM²',
-                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-                netRate: '1 999 zł',
-                price: '246 000 zł',
-            },
-            {
-                title: 'CUPRA Ateca',
-                image: cupra2,
-                description: 'Akumulator 58 kWh moc do 204 KM²',
-                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-                netRate: '1 999 zł',
-                price: '246 000 zł',
-            },
-            {
-                title: 'CUPRA Ateca',
-                image: cupra3,
-                description: 'Akumulator 58 kWh moc do 204 KM²',
-                leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-                netRate: '1 999 zł',
-                price: '246 000 zł',
-            }
-        ]
-
-        mySwiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            initialSlide: 1,
-            spaceBetween: 30,
-            centeredSlides: true,
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 60,
-                    centeredSlides: true,
-                },
-
-            }
-        });
+    new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      slidesPerView: 1,
+      initialSlide: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3000,
+      },
+      centeredSlides: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 60,
+          centeredSlides: true,
+        },
+      },
     });
+  });
+
+  Swiper.use([Autoplay, Navigation])
 </script>
 
 <div class="slider">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            {#each slides as slide}
-                <div class="swiper-slide">
-                    <h2>{slide.title}</h2>
-                    <img  loading="lazy"  src={slide.image} alt="">
-                    <p>{slide.description}</p>
-                    <div class="slider__boxes">
-                        <div style="max-width: 140px;">
-                            <span>{slide.leasingInfo}</span>
-                        </div>
-                        <div>
-                            <span>Rata netto/mies. od*</span>
-                            <strong>{slide.netRate}</strong>
-                        </div>
-                        <div>
-                            <span>Cena brutto już od</span>
-                            <strong>{slide.price}</strong>
-                        </div>
-                    </div>
-                    <a href="#contact" class="slider__button btn btn--secondary">Umow jazdę próbna</a>
-                </div>
-            {/each}
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {#each slides as slide}
+        <div class="swiper-slide">
+          <h2>{slide.title}</h2>
+          <img  loading="lazy"  src={slide.image} alt="">
+          <p>{slide.description}</p>
+          <div class="slider__boxes">
+            <div style="max-width: 140px;">
+              <span>{slide.leasingInfo}</span>
+            </div>
+            <div>
+              <span>Rata netto/mies. od*</span>
+              <strong>{slide.netRate}</strong>
+            </div>
+            <div>
+              <span>Cena brutto już od</span>
+              <strong>{slide.price}</strong>
+            </div>
+          </div>
+          <a href="#contact" class="slider__button btn btn--secondary">Umow jazdę próbna</a>
         </div>
+      {/each}
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </div>
 
 <style lang="scss">
@@ -112,7 +121,6 @@
   .swiper-container {
     padding-block: 2rem;
     position: relative;
-    user-select: none;
   }
 
   .swiper-slide {
