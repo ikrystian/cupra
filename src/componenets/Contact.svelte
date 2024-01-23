@@ -195,12 +195,7 @@
             <div class="fake-checkbox">
                 <input type="checkbox" id="privacy1"/>
                 <label for="privacy1">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                        />
-                    </svg>
+
                 </label>
             </div>
             <label for="privacy1"
@@ -216,12 +211,7 @@
             <div class="fake-checkbox">
                 <input type="checkbox" id="privacy2"/>
                 <label for="privacy2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                        />
-                    </svg>
+
                 </label>
             </div>
             <label for="privacy2">E-mail</label>
@@ -231,12 +221,6 @@
             <div class="fake-checkbox">
                 <input type="checkbox" id="privacy3"/>
                 <label for="privacy3">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                        />
-                    </svg>
                 </label>
             </div>
             <label for="privacy3">Telefon</label>
@@ -246,12 +230,7 @@
             <div class="fake-checkbox">
                 <input type="checkbox" id="privacy4"/>
                 <label for="privacy4">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                        />
-                    </svg>
+
                 </label>
             </div>
             <label for="privacy4">Wiadomość SMS/MMS</label>
@@ -545,14 +524,20 @@
       background-color: #fff;
       border: 1px solid #d5d5d5;
       cursor: pointer;
+      position: relative;
 
-      svg {
-        width: 16px;
-        height: 16px;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        bottom: 3px;
+        left: 3px;
+        background-color: #D5D5D5;
         opacity: 0;
+        transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
         transform: scale(0);
-        transition: opacity 0.2s ease-in-out,
-        transform 0.2s ease-in-out;
       }
     }
 
@@ -560,9 +545,9 @@
       display: none;
 
       &:checked + label {
-        svg {
-          transform: scale(1);
+        &::before {
           opacity: 1;
+          transform: scale(1);
         }
       }
     }

@@ -10,6 +10,11 @@
     --color-1: #242221;
 }
 
+::selection {
+    background-color: #093E52;
+    color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +45,7 @@ img {
     text-decoration: none;
     color: var(--color-1);
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
     @media (min-width: 768px) {
         padding-inline: 2.4rem;
@@ -49,11 +55,23 @@ img {
 
 .btn--primary {
     border: 1px solid #190F14;
+
+    &:hover, &:focus {
+        background-color: #190F14;
+        color: #fff;
+    }
 }
 
 .btn--secondary {
     color: #fff;
     background-color: #190F14;
+    border: 1px solid #190F14;
+
+    &:hover, &:focus {
+        background-color: #fff;
+        color: #190F14;
+        border-color: 190F14;
+    }
 }
 
 .btn--icon {
