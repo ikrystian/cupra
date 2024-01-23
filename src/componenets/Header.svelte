@@ -9,6 +9,7 @@
 </script>
 
 <header class="header">
+    <div class="header__container container">
     <a href="/" class="logo-link">
         <svg class="logo" id="MARCA_POSITIVO_P2718" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 692.95 99.21">
             <defs>
@@ -46,6 +47,7 @@
             </svg>
         </button>
     </div>
+    </div>
 </header>
 
 <style lang="scss">
@@ -54,11 +56,15 @@
     z-index: 4;
     left: 0;
     right: 0;
-    padding: 1.98rem 1.2rem;
-    display: flex;
-    justify-content: space-between;
+
     gap: 1.2rem;
     background-color: #F5F5F5;
+
+    &__container {
+      padding: 1.98rem 1.2rem;
+      display: flex;
+      justify-content: space-between;
+    }
 
     &__buttons {
       display: none;
