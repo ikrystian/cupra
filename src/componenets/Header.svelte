@@ -39,7 +39,7 @@
         <a class="header__phone" href="tel:+48 585066565">+48 58 506 65 65</a>
         <div class="header__buttons">
             <a href="#" class="btn btn--primary">Zapytaj o ofertę</a>
-            <a href="#" class="btn btn--secondary">Umów na jazdę próbną</a>
+            <a href="#contact" class="btn btn--secondary">Umów na jazdę próbną</a>
         </div>
         <button class="btn btn--primary mobile-nav-button btn--icon" on:click={toggleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
