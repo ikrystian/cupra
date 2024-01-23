@@ -27,7 +27,7 @@
             <div class="dark-section-gallery__item">
                 <figure>
                     <div>
-                        <img  loading="lazy"  src={cupra1} alt="cupra 1">
+                        <img loading="lazy" src={cupra1} alt="cupra 1">
                     </div>
                     <figcaption>Design inspirowany wyścigami, stworzony z niezwykłą dbałością o detale.</figcaption>
                 </figure>
@@ -35,7 +35,7 @@
             <div class="dark-section-gallery__item">
                 <figure>
                     <div>
-                        <img  loading="lazy"  src={cupra2} alt="cupra 2">
+                        <img loading="lazy" src={cupra2} alt="cupra 2">
                     </div>
                     <figcaption>Podróżuj z rozmachem bez kompromisów.</figcaption>
                 </figure>
@@ -61,7 +61,7 @@
     <div class="container">
         <div class="dark-section__row ">
             <figure>
-                <img  loading="lazy"  src={cupra3} alt="">
+                <img loading="lazy" src={cupra3} alt="">
             </figure>
             <div class="dark-section__content-box">
                 <span>Technologia</span>
@@ -71,7 +71,7 @@
         </div>
         <div class="dark-section__row">
             <figure>
-                <img  loading="lazy"  src={cupra4} alt="">
+                <img loading="lazy" src={cupra4} alt="">
             </figure>
             <div class="dark-section__content-box">
                 <span>Potęga Designu</span>
@@ -81,7 +81,7 @@
         </div>
         <div class="dark-section__row">
             <figure>
-                <img  loading="lazy"  src={cupra5} alt="">
+                <img loading="lazy" src={cupra5} alt="">
             </figure>
             <div class="dark-section__content-box">
                 <span>Design wnętrza</span>
@@ -101,7 +101,7 @@
     background-color: #1B1B1B;
     color: #fff;
     padding: 3rem 1.2rem;
-    
+
     @media screen and (min-width: 768px) {
       padding: 5% 2.4rem
     }
@@ -266,11 +266,7 @@
         max-width: 100%;
         max-height: 100%;
         object-fit: cover;
-        transition: transform 3s ease-in-out;
-
-        &:hover {
-          transform: scale(1.1)
-        }
+        transition: transform 2s ease-in-out;
       }
     }
 
@@ -283,6 +279,35 @@
     }
 
     &__item {
+      figure > div {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 2rem;
+          top: 2rem;
+          right: 2rem;
+          bottom: 2rem;
+          border: 5px solid rgba(255, 255, 255, 0.4);
+          transform: scale(0.8);
+          opacity: 0;
+          transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 1;
+            transform: scale(1)
+          }
+
+          img {
+            transform: scale(1.1)
+          }
+        }
+      }
+
+
       &:nth-child(1) {
         figure > div {
           @media screen and (min-width: 768px) {
@@ -315,12 +340,16 @@
 
   .try-it {
     @media screen and (min-width: 1400px) {
-      height: 300vh; margin-top: -100dvh; z-index: 1;
+      height: 300vh;
+      margin-top: -100dvh;
+      z-index: 1;
     }
 
     &__container {
       @media screen and (min-width: 1400px) {
-        position: sticky; top: 90px; min-height: 100dvh;
+        position: sticky;
+        top: 90px;
+        min-height: 100dvh;
       }
     }
   }
