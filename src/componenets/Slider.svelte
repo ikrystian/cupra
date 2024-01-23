@@ -112,6 +112,7 @@
   .swiper-container {
     padding-block: 2rem;
     position: relative;
+    user-select: none;
   }
 
   .swiper-slide {
