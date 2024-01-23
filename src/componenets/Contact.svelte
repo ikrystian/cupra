@@ -272,7 +272,7 @@
                 odpowiedzialnością Spółka Komandytowa, z siedzibą w Wejherowie przy
                 ulicy Gdańskiej 13c. Zapraszamy do zapoznania się z naszą polityką
                 prywatności umieszczoną pod linkiem:
-                https://www.plichta.com.pl/polityka-prywatnosci
+                <a href="https://www.plichta.com.pl/polityka-prywatnosci" target="_blank">https://www.plichta.com.pl/polityka-prywatnosci</a>
             </p>
         </div>
 
