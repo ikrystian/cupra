@@ -289,16 +289,35 @@
     background-color: #f5f5f5;
     border-bottom: 1rem solid #fff;
 
+    @media screen and (min-width: 1400px) {
+
+      padding-block: 10.4rem;
+
+    }
     &__subtitle {
       text-align: center;
       display: block;
       margin-bottom: 0.4rem;
+
+      @media screen and (min-width: 1400px) {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+      }
     }
 
     &__title {
       text-align: center;
       font-weight: 400;
       margin-bottom: 3.2rem;
+
+      @media screen and (min-width: 1400px) {
+        font-size: 3.6rem;
+        line-height: 4.6rem;
+        max-width: 436px;
+        margin-inline: auto;
+        font-weight: 300;
+        margin-bottom: 6.4rem;
+      }
     }
   }
 
@@ -360,9 +379,11 @@
         font-size: 1.6rem;
         background-color: transparent;
         margin-bottom: 0.4rem;
+        transition: border-color 0.2s ease-in-out;
 
         &:focus {
           outline: 0;
+          border-color: #000;
         }
       }
     }
@@ -439,6 +460,7 @@
       height: 10.5rem;
       display: flex;
       width: 100%;
+      max-width: calc(100% - 5rem);
       background: transparent;
       position: relative;
       align-items: center;
