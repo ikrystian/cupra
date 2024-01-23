@@ -8,11 +8,21 @@
     -moz-osx-font-smoothing: grayscale;
 
     --color-1: #242221;
+    --color-2: #F4F4F3;
+    --color-3: #1B1B1B;
+    --color-4: #DBD3CB;
+    --color-5: #000000;
+    --color-6: #F8F8F8;
+    --color-7: #093E52;
+    --color-8: #006072;
+    --color-9: #D9CDBD;
+    --color-10: #75787B;
+    --color-11: #fff;
 }
 
 ::selection {
-    background-color: #093E52;
-    color: #fff;
+    background-color: var(--color-7);
+    color: var(--color-11);
 }
 
 * {
@@ -52,23 +62,22 @@ img {
     }
 }
 
-
 .btn--primary {
     border: 1px solid #190F14;
 
     &:hover, &:focus {
         background-color: #190F14;
-        color: #fff;
+        color: var(--color-11);
     }
 }
 
 .btn--secondary {
-    color: #fff;
+    color: var(--color-11);
     background-color: #190F14;
     border: 1px solid #190F14;
 
     &:hover, &:focus {
-        background-color: #fff;
+        background-color: var(--color-11);
         color: #190F14;
         border-color: #190F14;
     }
@@ -87,31 +96,31 @@ img {
 
     svg {
         path {
-            fill: #fff;
+            fill: var(--color-11);
         }
     }
 }
 
 .btn--primary.btn--icon {
     color: #190F14;
-    background-color: #fff;
+    background-color: var(--color-11);
     border-color: transparent;
 
     svg path {
-        fill: #000;
+        fill: var(--color-5);
     }
 }
 
 
 .btn--dark {
-    background-color: #DBD3CB;
-    color: #000;
+    background-color: var(--color-4);
+    color: var(--color-5);
     display: inline-flex;
 }
 
 .btn--darker {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--color-11);
+    color: var(--color-5);
     display: inline-flex;
 }
 
