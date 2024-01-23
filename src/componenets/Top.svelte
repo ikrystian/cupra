@@ -4,11 +4,11 @@
 <section class="top">
     <img src={Top} alt="">
     <div class="container">
-      <div>
-          <h2><span>Cupra</span> Formentor</h2>
-          <h1>Wejdź do świata Cupra. Poznaj prawdziwą moc i&nbsp;sportowego ducha marki.</h1>
-          <a class="btn btn--dark" href="#">Ruszaj na jazdę testową</a>
-      </div>
+        <div>
+            <h2><span>Cupra</span> Formentor</h2>
+            <h1>Wejdź do świata Cupra. Poznaj prawdziwą moc i&nbsp;sportowego ducha marki.</h1>
+            <a class="btn btn--dark" href="#">Ruszaj na jazdę testową</a>
+        </div>
     </div>
 </section>
 
@@ -22,6 +22,8 @@
     padding: 5% 1.2rem;
     display: flex;
     align-items: flex-end;
+    z-index: 2;
+    box-shadow: 0 0 72px 0 rgba(0, 0, 0, 1);
 
     @media (min-width: 768px) {
       padding: 5% 2.4rem;
@@ -29,8 +31,8 @@
     }
 
     @media screen and (min-width: 1400px) {
-      height: 884px;
-      max-height: 884px;
+      height: 100dvh;
+      max-height: 100dvh;
     }
 
     > div {
@@ -39,7 +41,7 @@
 
       > div {
         @media (min-width: 768px) {
-          max-width:  742px;
+          max-width: 742px;
         }
       }
 

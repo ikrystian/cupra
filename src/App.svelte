@@ -14,8 +14,8 @@
 <Header/>
 <Top/>
 
-<section class="dark-section">
-    <div class="container">
+<section class="dark-section try-it">
+    <div class="container try-it__container">
         <h2>Wypróbuj</h2>
         <p>
             Zobacz, poczuj i przekonaj się, czym jest CUPRA. Poznaj
@@ -57,7 +57,7 @@
     <Slider/>
 </section>
 
-<section class="dark-section">
+<section class="dark-section ">
     <div class="container">
         <div class="dark-section__row ">
             <figure>
@@ -101,7 +101,7 @@
     background-color: #1B1B1B;
     color: #fff;
     padding: 3rem 1.2rem;
-
+    
     @media screen and (min-width: 768px) {
       padding: 5% 2.4rem
     }
@@ -311,5 +311,17 @@
     color: rgba(255, 255, 255, 0.50);
     margin-bottom: 3.2rem;
     display: block;
+  }
+
+  .try-it {
+    @media screen and (min-width: 1400px) {
+      height: 300vh; margin-top: -100dvh; z-index: 1;
+    }
+
+    &__container {
+      @media screen and (min-width: 1400px) {
+        position: sticky; top: 90px; min-height: 100dvh;
+      }
+    }
   }
 </style>
