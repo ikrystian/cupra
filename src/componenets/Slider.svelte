@@ -202,4 +202,24 @@
       display: inline-block;
     }
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-11);
+    transition: opacity 0.2s ease-in-out;
+    
+    &:hover, &:focus {
+      opacity: 0.5
+    }
+
+    &::after {
+      font-size: 28px;
+      color: var(--color-1);
+    }
+  }
 </style>

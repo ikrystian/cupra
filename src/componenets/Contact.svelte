@@ -182,7 +182,7 @@
                 Wysłanie uzupełnionego formularza oznacza Twoją zgodę na kontakt w celu
                 przedstawienia informacji handlowej w wybrany przez Ciebie sposób w
                 związku
-                <a href="#">Czytaj więcej</a>
+                <a href="#contact">Czytaj więcej</a>
             </p>
             <p>
                 Prosimy Cię też o wyrażenie poniższych zgód w celu możliwości

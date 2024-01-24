@@ -8,7 +8,7 @@
     <ul>
       {#each navItems as item}
         <li>
-          <a href="#">
+          <a href="#contact">
             {item}
             <svg
               xmlns="http://www.w3.org/2000/svg"

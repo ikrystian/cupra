@@ -49,7 +49,7 @@
             Unikalny SUVm cope, wyjątkowy, odważny i innowacyjny -
             zapewni Ci to, co najlepsze w marce CUPRA.
         </p>
-        <a href="#" class="btn btn--dark">Umów jazdę próbną</a>
+        <a href="#contact" class="btn btn--dark">Umów jazdę próbną</a>
     </div>
 </section>
 
@@ -66,7 +66,7 @@
             <div class="dark-section__content-box">
                 <span>Technologia</span>
                 <h2>Poczuj pełna wolność jazdy dzieki licznym innowacjom.</h2>
-                <a href="#" class="btn btn--darker">Umów jazdę próbną</a>
+                <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
             </div>
         </div>
         <div class="dark-section__row">
@@ -76,7 +76,7 @@
             <div class="dark-section__content-box">
                 <span>Potęga Designu</span>
                 <h2>Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.</h2>
-                <a href="#" class="btn btn--darker">Umów jazdę próbną</a>
+                <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
             </div>
         </div>
         <div class="dark-section__row">
@@ -86,7 +86,7 @@
             <div class="dark-section__content-box">
                 <span>Design wnętrza</span>
                 <h2>Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu CUPRY.</h2>
-                <a href="#" class="btn btn--darker">Umów jazdę próbną</a>
+                <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
             </div>
         </div>
     </div>

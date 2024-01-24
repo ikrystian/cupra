@@ -7,7 +7,7 @@
         <div>
             <h2><span>Cupra</span> Formentor</h2>
             <h1>Wejdź do świata Cupra. Poznaj prawdziwą moc i&nbsp;sportowego ducha marki.</h1>
-            <a class="btn btn--dark" href="#">Ruszaj na jazdę testową</a>
+            <a class="btn btn--dark" href="#contact">Ruszaj na jazdę testową</a>
         </div>
     </div>
 </section>
