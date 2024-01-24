@@ -70,6 +70,11 @@
     a {
         color: var(--primary-color);
         text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 
     ul {

@@ -316,6 +316,7 @@
       margin-inline: auto;
       max-width: 100%;
 
+
       @media screen and (min-width: 578px) {
         margin-top: 2.4rem;
       }
@@ -334,6 +335,11 @@
 
         a {
           color: var(--primary-color);
+
+          &:hover,
+          &:focus {
+            text-decoration: none;
+          }
         }
       }
     }
