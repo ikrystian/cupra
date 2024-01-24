@@ -108,6 +108,7 @@
         >
       </button>
       <h2>Wiadomość została wysłana.Dziękujemy! ❤️</h2>
+      <pre>{JSON.stringify(fields, null, 2)}</pre>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"
@@ -279,7 +280,7 @@
         id="surname"
         class="form__input"
         placeholder="Nazwisko (opcjonalnie)"
-        bind:value={fields.surnamme}
+        bind:value={fields.surname}
       />
       <Message name="surname" />
     </div>
@@ -727,12 +728,17 @@
 
     &__content {
       max-width: 95vw;
-      max-height: 60vh;
       background-color: var(--color-11);
       color: var(--color-1);
       padding: 3rem;
       position: relative;
       text-align: center;
+    }
+
+    pre {
+      text-align: left;
+      font-size: 1.4rem;
+      margin-block: 2rem;
     }
   }
 </style>
