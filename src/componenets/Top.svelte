@@ -23,6 +23,7 @@
     display: flex;
     align-items: flex-end;
     z-index: 2;
+    background-color: #093E52;
     box-shadow: 0 0 72px 0 rgba(0, 0, 0, 1);
 
     @media (min-width: 768px) {
