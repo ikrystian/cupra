@@ -3,11 +3,11 @@
     import Top from "./componenets/Top.svelte";
     import Slider from "./componenets/Slider.svelte";
 
-    import cupra1 from "./assets/cupra-1.jpg"
-    import cupra2 from "./assets/cupra-2.jpg"
-    import cupra3 from "./assets/cupra-3.jpg"
-    import cupra4 from "./assets/cupra-4.jpg"
-    import cupra5 from "./assets/cupra-5.jpg"
+    import cupra1 from "./assets/cupra-1.webp"
+    import cupra2 from "./assets/cupra-2.webp"
+    import cupra3 from "./assets/cupra-3.webp"
+    import cupra4 from "./assets/cupra-4.webp"
+    import cupra5 from "./assets/cupra-5.webp"
     import Footer from "./componenets/Footer.svelte";
     import Contact from "./componenets/Contact.svelte";
 </script>

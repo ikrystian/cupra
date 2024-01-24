@@ -68,11 +68,11 @@
         },
     ];
 
-    import cupraList1 from "../assets/cupra-list-1.png";
-    import cupraList2 from "../assets/cupra-list-2.png";
-    import cupraList3 from "../assets/cupra-list-3.png";
-    import cupraList4 from "../assets/cupra-list-4.png";
-    import cupraList5 from "../assets/cupra-list-5.png";
+    import cupraList1 from "../assets/cupra-list-1.webp";
+    import cupraList2 from "../assets/cupra-list-2.webp";
+    import cupraList3 from "../assets/cupra-list-3.webp";
+    import cupraList4 from "../assets/cupra-list-4.webp";
+    import cupraList5 from "../assets/cupra-list-5.webp";
 
     const select = (id) => () => {
         carData = carData.map((car) => {

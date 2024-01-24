@@ -1,5 +1,5 @@
 <script>
-    import Top from '../assets/top.png'
+    import Top from '../assets/top.webp'
 </script>
 <section class="top">
     <img loading="lazy" src={Top} alt="">
@@ -66,7 +66,7 @@
         font-size: 2.8rem;
         margin-bottom: 2.4rem;
         text-wrap: balance;
-        
+
         @media (min-width: 768px) {
           font-size: 4.8rem;
           margin-bottom: 3.6rem;

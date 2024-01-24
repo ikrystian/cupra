@@ -1,9 +1,12 @@
 <script>
   import Swiper from 'swiper';
   import {onMount} from "svelte";
-  import cupra1 from '../assets/cupra-slider-2.png';
-  import cupra2 from '../assets/cupra-slider-1.png';
-  import cupra3 from '../assets/cupra-slider-3.png';
+  import cupra1 from '../assets/slider-1.webp';
+  import cupra2 from '../assets/slider-2.webp';
+  import cupra3 from '../assets/slider-3.webp';
+  import cupra4 from '../assets/slider-4.webp';
+  import cupra5 from '../assets/slider-5.webp';
+
   import { Autoplay, Navigation } from 'swiper/modules'
   let slides = [];
 
@@ -11,53 +14,53 @@
 
     slides = [
       {
-        title: 'CUPRA Ateca',
+        title: 'CUPRA Formentor',
         image: cupra1,
-        description: 'Akumulator 58 kWh moc do 204 KM²',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-        netRate: '1 999 zł',
-        price: '246 000 zł',
+        description: 'Maksymalna prędkość: 204 KM/H Moc silnika: 150 KM',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
+        netRate: '1439 zł',
+        price: '127 800 zł',
       },
       {
-        title: 'CUPRA Ateca',
+        title: 'CUPRA Formentor VZ',
         image: cupra2,
-        description: 'Akumulator 58 kWh moc do 204 KM²',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-        netRate: '1 999 zł',
-        price: '246 000 zł',
+        description: 'Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
+        netRate: '1553 zł',
+        price: '152 400 zł',
       },
       {
         title: 'CUPRA Ateca',
         image: cupra3,
-        description: 'Akumulator 58 kWh moc do 204 KM²',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-        netRate: '1 999 zł',
-        price: '246 000 zł',
+        description: 'Maksymalna prędkość: 247 KM/H Moc silnika: 300 KM',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
+        netRate: '2334 zł',
+        price: '220 700 zł',
       },
       {
-        title: 'CUPRA Ateca',
+        title: 'Nowa CUPRA Born',
+        image: cupra4,
+        description: 'Akumulator 58 kWh moc do 204 KM²',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
+        netRate: '1943 zł',
+        price: '179 600 zł',
+      },
+      {
+        title: 'Leon',
+        image: cupra5,
+        description: 'Maksymalna prędkość: 245 KM/H Moc silnika: 300 KM',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
+        netRate: '1553 zł',
+        price: '152 400 zł',
+      },
+      {
+        title: 'Leon Sportstourer',
         image: cupra1,
-        description: 'Akumulator 58 kWh moc do 204 KM²',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-        netRate: '1 999 zł',
-        price: '246 000 zł',
+        description: 'Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM',
+        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
+        netRate: '1601 zł',
+        price: '156 200  zł',
       },
-      {
-        title: 'CUPRA Ateca',
-        image: cupra2,
-        description: 'Akumulator 58 kWh moc do 204 KM²',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-        netRate: '1 999 zł',
-        price: '246 000 zł',
-      },
-      {
-        title: 'CUPRA Ateca',
-        image: cupra3,
-        description: 'Akumulator 58 kWh moc do 204 KM²',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty wlasnej',
-        netRate: '1 999 zł',
-        price: '246 000 zł',
-      }
     ]
 
     new Swiper('.swiper-container', {
