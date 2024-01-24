@@ -65,7 +65,8 @@
         font-weight: 300;
         font-size: 2.8rem;
         margin-bottom: 2.4rem;
-
+        text-wrap: balance;
+        
         @media (min-width: 768px) {
           font-size: 4.8rem;
           margin-bottom: 3.6rem;
