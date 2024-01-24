@@ -28,14 +28,14 @@
                   transform="translate(-74.47 -248.03)"/>
         </svg>
     </a>
-    <Nav/>
+    <Nav {showNav} />
 
     <div class="header__nav-content">
-        <button class="btn btn--secondary btn--icon phone-button">
+        <a href="tel:+48585066565" class="btn btn--secondary btn--icon phone-button" title="+48 58 506 65 65">
             <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
                 <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
             </svg>
-        </button>
+        </a>
         <a class="header__phone" href="tel:+48 585066565">+48 58 506 65 65</a>
         <div class="header__buttons">
             <a href="#" class="btn btn--primary">Zapytaj o ofertę</a>
@@ -83,7 +83,7 @@
       flex: 1 1 auto;
       justify-content: flex-end;
 
-      @media screen and (min-width: 1051px) {
+      @media screen and (min-width: 1230px) {
         flex: unset;
         gap: 4.8rem;
       }
@@ -92,7 +92,7 @@
     &__phone {
       display: none;
 
-      @media screen and (min-width: 750px) {
+      @media screen and (min-width: 810px) {
         display: block;
         color: var(--color-1);
         text-decoration: none;
@@ -101,7 +101,7 @@
   }
 
   .phone-button {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 810px) {
       display: none;
     }
   }
@@ -115,7 +115,7 @@
   }
 
   .mobile-nav-button {
-    @media screen and (min-width: 1171px) {
+    @media screen and (min-width: 1230px) {
         display: none;
     }
   }

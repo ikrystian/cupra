@@ -37,7 +37,7 @@
 
     > div {
       position: relative;
-      color: #fff;
+      color: var(--color-11);
 
       > div {
         @media (min-width: 768px) {

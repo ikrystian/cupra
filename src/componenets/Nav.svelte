@@ -1,9 +1,10 @@
 <script>
   const navItems = ["Samochody", "Jazda próbna", "Oferta", "Salony Cupra"];
+  export let showNav;  
 </script>
 
 {#if navItems.length > 0}
-  <nav>
+  <nav class:active={showNav}>
     <ul>
       {#each navItems as item}
         <li>
@@ -27,7 +28,7 @@
 {/if}
 
 <style lang="scss">
-  @media screen and (max-width: 1170px) {
+  @media screen and (max-width: 1230px) {
     nav {
       position: fixed;
       display: none;
@@ -35,8 +36,12 @@
       left: 0;
       right: 0;
       z-index: 2;
-      background-color: #fff;
+      background-color: var(--color-11);
       bottom: 0;
+      
+      &.active {
+        display: block;
+      }
     }
 
     a {
@@ -53,13 +58,13 @@
 
       svg {
         path {
-          fill: #242221;
+          fill: var(--color-1);
         }
       }
     }
   }
 
-  @media screen and (min-width: 1171px) {
+  @media screen and (min-width: 1230px) {
     nav {
       display: flex;
       align-items: center;

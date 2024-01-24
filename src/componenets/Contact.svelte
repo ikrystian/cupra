@@ -266,7 +266,7 @@
   .contact {
     padding: 2rem 1.2rem;
     background-color: #f5f5f5;
-    border-bottom: 1rem solid #fff;
+    border-bottom: 1rem solid var(--color-11);
 
     @media screen and (min-width: 1400px) {
 
@@ -353,7 +353,7 @@
       input {
         border: 0;
         border-bottom: 1px solid #d5d5d5;
-        color: #242221;
+        color: var(--color-1);
         padding-block: 1.2rem;
         font-size: 1.6rem;
         background-color: transparent;
@@ -362,7 +362,7 @@
 
         &:focus {
           outline: 0;
-          border-color: #000;
+          border-color: var(--color-5);
         }
       }
     }
@@ -424,7 +424,7 @@
     &:not(.active) {
       .car-select__item {
         &:hover {
-          border-color: #000;
+          border-color: var(--color-5);
 
           img {
             transform: translateX(-20px);
@@ -521,7 +521,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #fff;
+      background-color: var(--color-11);
       border: 1px solid #d5d5d5;
       cursor: pointer;
       position: relative;

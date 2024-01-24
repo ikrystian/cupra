@@ -18,6 +18,7 @@
     --color-9: #D9CDBD;
     --color-10: #75787B;
     --color-11: #fff;
+    --color-12: #190F14;
 }
 
 ::selection {
@@ -83,6 +84,14 @@ img {
     }
 }
 
+.btn--secondary.btn--icon {
+    &:hover, &:focus {
+        svg path {
+            fill: var(--color-5)
+        }
+    }
+}
+
 .btn--icon {
     width: 3.2rem;
     height: 3.2rem;
@@ -101,6 +110,8 @@ img {
     }
 }
 
+
+
 .btn--primary.btn--icon {
     color: #190F14;
     background-color: var(--color-11);
@@ -109,6 +120,8 @@ img {
     svg path {
         fill: var(--color-5);
     }
+
+
 }
 
 

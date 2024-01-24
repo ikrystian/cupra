@@ -98,8 +98,8 @@
 
 <style lang="scss">
   .dark-section {
-    background-color: #1B1B1B;
-    color: #fff;
+    background-color: var(--color-3);
+    color: var(--color-11);
     padding: 3rem 1.2rem;
 
     @media screen and (min-width: 768px) {
@@ -157,7 +157,7 @@
         right: 0;
         top: 0;
         width: 670px;
-        background-color: #1B1B1B;
+        background-color: var(--color-3);
         padding-inline: 11.7rem;
         padding-bottom: 6.4rem;
       }
