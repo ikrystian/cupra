@@ -132,9 +132,16 @@ img {
 }
 
 .btn--darker {
+    
     background-color: var(--color-11);
     color: var(--color-5);
     display: inline-flex;
+
+    &:hover, &:focus {
+        background-color: var(--color-1);
+        color: var(--color-11);
+        border-color: var(--color-11)
+    }
 }
 
 

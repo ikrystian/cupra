@@ -96,6 +96,10 @@
         display: block;
         color: var(--color-1);
         text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
