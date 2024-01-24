@@ -140,7 +140,6 @@
     }
 
     &:not(.swiper-slide-active) {
-      opacity: 0.3;
       filter: grayscale(1) blur(2px);
     }
 

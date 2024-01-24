@@ -4,15 +4,15 @@
             <span>SEAT CUPRA S.A.U. 2022 ®</span>
             <nav>
                 <ul>
-                    <li><a href="#">Obowiązek informacyjny</a></li>
-                    <li><a href="#">Polityka cookies</a></li>
+                    <li><a href="https://www.google.com/search?q=Obowi%C4%85zek+informacyjny&oq=Obowi%C4%85zek+informacyjny&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzI4NmowajSoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank">Obowiązek informacyjny</a></li>
+                    <li><a href="https://www.google.com/search?q=Polityka+cookies&sca_esv=601135296&ei=fk6xZZK3B_CFxc8PzpsH&udm=&ved=0ahUKEwiS7s_fy_aDAxXwQvEDHc7NAQAQ4dUDCHE&uact=5&oq=Polityka+cookies&gs_lp=Egxnd3Mtd2l6LXNlcnAiEFBvbGl0eWthIGNvb2tpZXMyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYFhgeMgYQABgWGB5I6gFQAFgAcAB4AZABAJgBUqABUqoBATG4AQPIAQD4AQL4AQHiAwQYACBB&sclient=gws-wiz-serp" target="_blank">Polityka cookies</a></li>
                 </ul>
             </nav>
 
             <nav class="social">
                 <ul>
-                    <li>
-                        <a href="#">
+                    <li> 
+                        <a href="https://instagram.com" target="_blank" title="Insta">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
                                 <g opacity="0.7">
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://vimeo.com" target="_blank" title="Vimeo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
                                 <g opacity="0.7">
