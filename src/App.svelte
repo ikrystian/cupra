@@ -122,19 +122,12 @@
       position: relative;
       margin-bottom: 2rem;
 
-      //@media screen and (min-width: 768px) {
-      //  display: grid;
-      //  grid-template-columns: 1fr 1fr;
-      //  grid-gap: 2rem;
-      //  align-items: center;
-      //  margin-bottom: 5rem;
-      //}
-
       @media screen and (min-width: 1100px) {
         display: flex;
         gap: 1.2rem;
         margin-bottom: 7.5rem;
       }
+      
       @media screen and (min-width: 1400px) {
         margin-bottom: 15rem;
       }

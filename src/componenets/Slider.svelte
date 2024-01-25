@@ -146,13 +146,11 @@
       filter: grayscale(1) blur(2px);
     }
 
-
       &:hover {
         img {
           transform: scale(1.15);
         }
       }
-
 
     img {
       margin-bottom: 3.8rem;
