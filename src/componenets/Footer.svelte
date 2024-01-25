@@ -49,7 +49,7 @@
 
 <style>
     .footer {
-        border-top: 1px solid #D5D5D5;
+        border-top: 1px solid var(--color-16);
     }
 
     .footer__container {

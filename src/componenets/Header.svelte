@@ -103,7 +103,7 @@
     left: 0;
     right: 0;
     gap: 1.2rem;
-    background-color: #f5f5f5;
+    background-color: var(--color-14);
     z-index: 3000;
 
     &__container {

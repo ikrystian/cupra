@@ -377,7 +377,7 @@
 <style lang="scss">
   .contact {
     padding: 2rem 1.2rem;
-    background-color: #f5f5f5;
+    background-color:var(--color-14);
     border-bottom: 1rem solid var(--color-11);
 
     @media screen and (min-width: 1400px) {
@@ -467,7 +467,7 @@
 
       input {
         border: 0;
-        border-bottom: 1px solid #d5d5d5;
+        border-bottom: 1px solid var(--color-16);
         color: var(--color-1);
         padding-block: 1.2rem;
         font-size: 1.6rem;
@@ -548,7 +548,7 @@
       }
     }
     &__item {
-      border: 0.1rem solid #d5d5d5;
+      border: 0.1rem solid var(--color-16);
       border-top: 0;
       margin-left: 5rem;
       height: 10.5rem;
@@ -583,7 +583,7 @@
         top: 0;
         bottom: 0;
         width: 0;
-        background-color: #d5d5d5;
+        background-color: var(--color-16);
         opacity: 0;
         transition:
           width 0.4s ease-in-out,
@@ -591,7 +591,7 @@
       }
 
       &:nth-child(1) {
-        border-top: 0.1rem solid #d5d5d5;
+        border-top: 0.1rem solid var(--color-16);
       }
 
       @media screen and (min-width: 768px) {
@@ -612,7 +612,7 @@
 
   .car-select__item span {
     white-space: nowrap;
-    background-color: #f5f5f5;
+    background-color: var(--color-14);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -638,7 +638,7 @@
       align-items: center;
       justify-content: center;
       background-color: var(--color-11);
-      border: 1px solid #d5d5d5;
+      border: 1px solid var(--color-16);
       cursor: pointer;
       position: relative;
 
@@ -650,7 +650,7 @@
         right: 3px;
         bottom: 3px;
         left: 3px;
-        background-color: #d5d5d5;
+        background-color: var(--color-16);
         opacity: 0;
         transition:
           transform 0.2s ease-in-out,

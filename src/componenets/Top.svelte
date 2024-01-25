@@ -2,8 +2,8 @@
     import Top from '../assets/top.webp'
 </script>
 <section class="top">
-    <img loading="lazy" src={Top} alt="">
-    <div class="container">
+    <img loading="lazy" src={Top} alt="" class="top__image">
+    <div class="top__container container">
         <div>
             <h2><span>Cupra</span> Formentor</h2>
             <h1>Wejdź do świata Cupra. Poznaj prawdziwą moc i&nbsp;sportowego ducha marki.</h1>
@@ -17,13 +17,12 @@
   .top {
     height: 60dvh;
     max-height: 400px;
-    max-width: 100%;
     position: relative;
     padding: 5% 1.2rem;
     display: flex;
     align-items: flex-end;
     z-index: 2;
-    background-color: #093E52;
+    background-color: var(--color-7);
     box-shadow: 0 0 72px 0 rgba(0, 0, 0, 1);
 
     @media (min-width: 768px) {
@@ -36,7 +35,7 @@
       max-height: 100dvh;
     }
 
-    > div {
+    &__container {
       position: relative;
       color: var(--color-11);
 
@@ -81,8 +80,8 @@
 
     img {
       width: 100%;
-      height: 100%;
       max-width: 100%;
+      height: 100%;
       max-height: 100%;
       left: 0;
       top: 0;
