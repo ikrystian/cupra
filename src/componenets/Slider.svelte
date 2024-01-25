@@ -1,72 +1,71 @@
 <script>
-  import Swiper from 'swiper';
-  import {onMount} from "svelte";
-  import cupra1 from '../assets/slider-1.webp';
-  import cupra2 from '../assets/slider-2.webp';
-  import cupra3 from '../assets/slider-3.webp';
-  import cupra4 from '../assets/slider-4.webp';
-  import cupra5 from '../assets/slider-5.webp';
+  import Swiper from "swiper";
+  import { onMount } from "svelte";
+  import cupra1 from "../assets/slider-1.webp";
+  import cupra2 from "../assets/slider-2.webp";
+  import cupra3 from "../assets/slider-3.webp";
+  import cupra4 from "../assets/slider-4.webp";
+  import cupra5 from "../assets/slider-5.webp";
 
-  import { Autoplay, Navigation } from 'swiper/modules'
+  import { Autoplay, Navigation } from "swiper/modules";
   let slides = [];
 
-  onMount( () => {
-
+  onMount(() => {
     slides = [
       {
-        title: 'CUPRA Formentor',
+        title: "CUPRA Formentor",
         image: cupra1,
-        description: 'Maksymalna prędkość: 204 KM/H Moc silnika: 150 KM',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
-        netRate: '1439 zł',
-        price: '127 800 zł',
+        description: "Maksymalna prędkość: 204 KM/H Moc silnika: 150 KM",
+        leasingInfo: "Dostępny w leasingu z 0% opłaty własnej",
+        netRate: "1439 zł",
+        price: "127 800 zł",
       },
       {
-        title: 'CUPRA Formentor VZ',
+        title: "CUPRA Formentor VZ",
         image: cupra2,
-        description: 'Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
-        netRate: '1553 zł',
-        price: '152 400 zł',
+        description: "Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM",
+        leasingInfo: "Dostępny w leasingu z 0% opłaty własnej",
+        netRate: "1553 zł",
+        price: "152 400 zł",
       },
       {
-        title: 'CUPRA Ateca',
+        title: "CUPRA Ateca",
         image: cupra3,
-        description: 'Maksymalna prędkość: 247 KM/H Moc silnika: 300 KM',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
-        netRate: '2334 zł',
-        price: '220 700 zł',
+        description: "Maksymalna prędkość: 247 KM/H Moc silnika: 300 KM",
+        leasingInfo: "Dostępny w leasingu z 0% opłaty własnej",
+        netRate: "2334 zł",
+        price: "220 700 zł",
       },
       {
-        title: 'Nowa CUPRA Born',
+        title: "Nowa CUPRA Born",
         image: cupra4,
-        description: 'Akumulator 58 kWh moc do 204 KM²',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
-        netRate: '1943 zł',
-        price: '179 600 zł',
+        description: "Akumulator 58 kWh moc do 204 KM²",
+        leasingInfo: "Dostępny w leasingu z 0% opłaty własnej",
+        netRate: "1943 zł",
+        price: "179 600 zł",
       },
       {
-        title: 'Leon',
+        title: "Leon",
         image: cupra5,
-        description: 'Maksymalna prędkość: 245 KM/H Moc silnika: 300 KM',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
-        netRate: '1553 zł',
-        price: '152 400 zł',
+        description: "Maksymalna prędkość: 245 KM/H Moc silnika: 300 KM",
+        leasingInfo: "Dostępny w leasingu z 0% opłaty własnej",
+        netRate: "1553 zł",
+        price: "152 400 zł",
       },
       {
-        title: 'Leon Sportstourer',
+        title: "Leon Sportstourer",
         image: cupra1,
-        description: 'Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM',
-        leasingInfo: 'Dostępny w leasingu z 0% opłaty własnej',
-        netRate: '1601 zł',
-        price: '156 200  zł',
+        description: "Maksymalna prędkość: 250 KM/H Moc silnika: 310 KM",
+        leasingInfo: "Dostępny w leasingu z 0% opłaty własnej",
+        netRate: "1601 zł",
+        price: "156 200  zł",
       },
-    ]
+    ];
 
-    new Swiper('.swiper-container', {
+    new Swiper(".swiper-container", {
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
       slidesPerView: 1,
       initialSlide: 1,
@@ -85,7 +84,7 @@
     });
   });
 
-  Swiper.use([Autoplay, Navigation])
+  Swiper.use([Autoplay, Navigation]);
 </script>
 
 <div class="slider">
@@ -94,7 +93,7 @@
       {#each slides as slide}
         <div class="swiper-slide">
           <h2>{slide.title}</h2>
-          <img  loading="lazy"  src={slide.image} alt="">
+          <img loading="lazy" src={slide.image} alt="" />
           <p>{slide.description}</p>
           <div class="slider__boxes">
             <div style="max-width: 140px;">
@@ -109,7 +108,9 @@
               <strong>{slide.price}</strong>
             </div>
           </div>
-          <a href="#contact" class="slider__button btn btn--secondary">Umow jazdę próbna</a>
+          <a href="#contact" class="slider__button btn btn--secondary"
+            >Umow jazdę próbna</a
+          >
         </div>
       {/each}
     </div>
@@ -119,7 +120,7 @@
 </div>
 
 <style lang="scss">
-  @import 'swiper/swiper-bundle.css';
+  @import "swiper/swiper-bundle.css";
 
   .swiper-container {
     padding-block: 2rem;
@@ -128,7 +129,9 @@
 
   .swiper-slide {
     padding-inline: 1.2rem;
-    transition: opacity 0.2s ease-in-out, fitler 0.2s ease-in-out;
+    transition:
+      opacity 0.2s ease-in-out,
+      fitler 0.2s ease-in-out;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -143,8 +146,17 @@
       filter: grayscale(1) blur(2px);
     }
 
+
+      &:hover {
+        img {
+          transform: scale(1.15);
+        }
+      }
+
+
     img {
       margin-bottom: 3.8rem;
+      transition: transform 0.2s ease-in-out;
     }
 
     p {
@@ -212,9 +224,10 @@
     justify-content: center;
     background-color: var(--color-11);
     transition: opacity 0.2s ease-in-out;
-    
-    &:hover, &:focus {
-      opacity: 0.5
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
     }
 
     &::after {
