@@ -1,100 +1,112 @@
 <script>
-    import Header from "./componenets/Header.svelte";
-    import Top from "./componenets/Top.svelte";
-    import Slider from "./componenets/Slider.svelte";
+  import Header from "./componenets/Header.svelte";
+  import Top from "./componenets/Top.svelte";
+  import Slider from "./componenets/Slider.svelte";
 
-    import cupra1 from "./assets/cupra-1.webp"
-    import cupra2 from "./assets/cupra-2.webp"
-    import cupra3 from "./assets/cupra-3.webp"
-    import cupra4 from "./assets/cupra-4.webp"
-    import cupra5 from "./assets/cupra-5.webp"
-    import Footer from "./componenets/Footer.svelte";
-    import Contact from "./componenets/Contact.svelte";
+  import cupra1 from "./assets/cupra-1.webp";
+  import cupra2 from "./assets/cupra-2.webp";
+  import cupra3 from "./assets/cupra-3.webp";
+  import cupra4 from "./assets/cupra-4.webp";
+  import cupra5 from "./assets/cupra-5.webp";
+  import Footer from "./componenets/Footer.svelte";
+  import Contact from "./componenets/Contact.svelte";
 </script>
-<Header/>
-<Top/>
+
+<Header />
+<Top />
 
 <section class="dark-section try-it">
-    <div class="container try-it__container">
-        <h2>Wypróbuj</h2>
-        <p>
-            Zobacz, poczuj i przekonaj się, czym jest CUPRA. Poznaj
-            samochody, które są wyjątkowym połączeniem technologii,
-            mocy, elegancji i komfortu.
-        </p>
+  <div class="container try-it__container">
+    <h2>Wypróbuj</h2>
+    <p>
+      Zobacz, poczuj i przekonaj się, czym jest CUPRA. Poznaj samochody, które
+      są wyjątkowym połączeniem technologii, mocy, elegancji i komfortu.
+    </p>
 
-        <div class="dark-section-gallery">
-            <div class="dark-section-gallery__item">
-                <figure>
-                    <div>
-                        <img loading="lazy" src={cupra1} alt="cupra 1">
-                    </div>
-                    <figcaption>Design inspirowany wyścigami, stworzony z niezwykłą dbałością o detale.</figcaption>
-                </figure>
-            </div>
-            <div class="dark-section-gallery__item">
-                <figure>
-                    <div>
-                        <img loading="lazy" src={cupra2} alt="cupra 2">
-                    </div>
-                    <figcaption>Podróżuj z rozmachem bez kompromisów.</figcaption>
-                </figure>
-            </div>
-        </div>
-
-        <!--    obrazki w gridzie-->
-        <h3>Tylko dla odważnych</h3>
-        <p>
-            Model CUPRA, który idealnie wpisuje się DNA marki.
-            Unikalny SUVm cope, wyjątkowy, odważny i innowacyjny -
-            zapewni Ci to, co najlepsze w marce CUPRA.
-        </p>
-        <a href="#contact" class="btn btn--dark">Umów jazdę próbną</a>
+    <div class="dark-section-gallery">
+      <div class="dark-section-gallery__item">
+        <figure>
+          <div>
+            <img loading="lazy" src={cupra1} alt="cupra 1" />
+          </div>
+          <figcaption>
+            Design inspirowany wyścigami, stworzony z niezwykłą dbałością o
+            detale.
+          </figcaption>
+        </figure>
+      </div>
+      <div class="dark-section-gallery__item">
+        <figure>
+          <div>
+            <img loading="lazy" src={cupra2} alt="cupra 2" />
+          </div>
+          <figcaption>Podróżuj z rozmachem bez kompromisów.</figcaption>
+        </figure>
+      </div>
     </div>
+
+    <!--    obrazki w gridzie-->
+    <h3>Tylko dla odważnych</h3>
+    <p>
+      Model CUPRA, który idealnie wpisuje się DNA marki. Unikalny SUVm cope,
+      wyjątkowy, odważny i innowacyjny - zapewni Ci to, co najlepsze w marce
+      CUPRA.
+    </p>
+    <a href="#contact" class="btn btn--dark">Umów jazdę próbną</a>
+  </div>
 </section>
 
 <section>
-    <Slider/>
+  <Slider />
 </section>
 
-<section class="dark-section ">
-    <div class="container">
-        <div class="dark-section__row ">
-            <figure>
-                <img loading="lazy" src={cupra3} alt="">
-            </figure>
-            <div class="dark-section__content-box">
-                <span>Technologia</span>
-                <h2>Poczuj pełna wolność jazdy dzieki licznym innowacjom.</h2>
-                <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
-            </div>
-        </div>
-        <div class="dark-section__row">
-            <figure>
-                <img loading="lazy" src={cupra4} alt="">
-            </figure>
-            <div class="dark-section__content-box">
-                <span>Potęga Designu</span>
-                <h2>Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.</h2>
-                <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
-            </div>
-        </div>
-        <div class="dark-section__row">
-            <figure>
-                <img loading="lazy" src={cupra5} alt="">
-            </figure>
-            <div class="dark-section__content-box">
-                <span>Design wnętrza</span>
-                <h2>Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu CUPRY.</h2>
-                <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
-            </div>
-        </div>
+<section class="dark-section">
+  <div class="container">
+    <div class="dark-section__row dark-row-section">
+      <figure class="dark-row-section__figure">
+        <img
+          loading="lazy"
+          src={cupra3}
+          alt=""
+          class="dark-row-section__image"
+        />
+      </figure>
+      <div class="dark-section__content-box dark-row-section__content-box">
+        <span>Technologia</span>
+        <h2>Poczuj pełna wolność jazdy dzieki licznym innowacjom.</h2>
+        <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
+      </div>
     </div>
+    <div class="dark-section__row dark-row-section">
+      <figure class="dark-row-section__figure">
+        <img loading="lazy" src={cupra4} alt="" class="dark-row-section__image" />
+      </figure>
+      <div class="dark-section__content-box">
+        <span>Potęga Designu</span>
+        <h2>
+          Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.
+        </h2>
+        <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
+      </div>
+    </div>
+    <div class="dark-section__row dark-row-section">
+      <figure class="dark-row-section__figure">
+        <img loading="lazy" src={cupra5} alt="" class="dark-row-section__image" />
+      </figure>
+      <div class="dark-section__content-box">
+        <span>Design wnętrza</span>
+        <h2>
+          Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu CUPRY.
+        </h2>
+        <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<Contact/>
+<Contact />
 
-<Footer/>
+<Footer />
 
 <style lang="scss">
   .dark-section {
@@ -103,7 +115,7 @@
     padding: 3rem 1.2rem;
 
     @media screen and (min-width: 768px) {
-      padding: 5% 2.4rem
+      padding: 5% 2.4rem;
     }
 
     &__row {
@@ -185,7 +197,8 @@
     }
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     font-weight: 300;
     font-size: 2.8rem;
     margin-bottom: 1.6rem;
@@ -219,7 +232,6 @@
       @media screen and (min-width: 1400px) {
         margin-bottom: 6.8rem;
       }
-
     }
   }
 
@@ -237,11 +249,9 @@
   }
 
   p {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 2rem;
-
   }
-
 
   .dark-section-gallery {
     display: grid;
@@ -256,7 +266,6 @@
     @media screen and (min-width: 1400px) {
       grid-template-columns: 787px 553px;
     }
-
 
     img {
       @media screen and (min-width: 768px) {
@@ -283,7 +292,7 @@
         position: relative;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           left: 2rem;
           top: 2rem;
@@ -292,21 +301,22 @@
           border: 5px solid rgba(255, 255, 255, 0.4);
           transform: scale(0.8);
           opacity: 0;
-          transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+          transition:
+            transform 0.2s ease-in-out,
+            opacity 0.2s ease-in-out;
         }
 
         &:hover {
           &::after {
             opacity: 1;
-            transform: scale(1)
+            transform: scale(1);
           }
 
           img {
-            transform: scale(1.1)
+            transform: scale(1.1);
           }
         }
       }
-
 
       &:nth-child(1) {
         figure > div {
@@ -317,7 +327,6 @@
           }
         }
       }
-
 
       &:nth-child(2) {
         figure > div {
@@ -333,7 +342,7 @@
   }
 
   .dark-section-gallery figcaption {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 3.2rem;
     display: block;
   }
@@ -351,6 +360,26 @@
         top: 90px;
         min-height: 100dvh;
       }
+    }
+  }
+
+  .dark-row-section {
+    &:hover {
+        img {
+          opacity: 1;
+          transform: translate3d(0,0,0);
+        }
+      }
+  
+    &__image {
+      max-width: none;
+      width: -webkit-calc(100% + 50px);
+      width: calc(100% + 50px);
+      opacity: 0.7;
+      transition:
+        opacity 0.35s,
+        transform 0.35s;
+      transform: translate3d(-40px, 0, 0);
     }
   }
 </style>

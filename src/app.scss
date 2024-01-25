@@ -123,8 +123,6 @@ img {
     svg path {
         fill: var(--color-5);
     }
-
-
 }
 
 
@@ -139,7 +137,6 @@ img {
 }
 
 .btn--darker {
-
     background-color: var(--color-11);
     color: var(--color-5);
     display: inline-flex;
@@ -165,3 +162,7 @@ img {
 .invalid {
     text-align: right;
 }
+
+.scrolled {
+    box-shadow: 0 0 5px 1px var(--color-12);
+  }
