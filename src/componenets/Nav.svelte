@@ -43,15 +43,18 @@
       background-color: var(--color-11);
       bottom: 0;
 
+      
       &.active {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       .mobile-menu-buttons {
         display: flex;
-        gap: 2.4rem;
+        gap: 1.2rem;
         flex-wrap: wrap;
-        margin-top: 2.4rem;
+        margin: 1.2rem;
 
         a {
           justify-content: center;
@@ -62,7 +65,7 @@
           }
 
           &.btn--secondary {
-            color: var(--color-11)
+            color: var(--color-11);
           }
         }
       }
@@ -90,15 +93,15 @@
 
   @media screen and (min-width: 768px) {
     nav .mobile-menu-buttons {
-        display: none;
-      }
+      display: none;
+    }
   }
 
   @media screen and (min-width: 1230px) {
     nav {
       display: flex;
       align-items: center;
-      
+
       ul {
         display: flex;
         list-style: none;
