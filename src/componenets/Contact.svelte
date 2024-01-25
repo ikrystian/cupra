@@ -73,22 +73,15 @@
   import cupraList4 from "../assets/cupra-list-4.webp";
   import cupraList5 from "../assets/cupra-list-5.webp";
 
-  const select = (id) => () => {
-    carData = carData.map((car) => {
-      if (car.id === id) {
-        car.selected = true;
-        fields.selectedCar = car.id;
-      } else {
-        car.selected = false;
-      }
-      return car;
-    });
+  const select = (id) => {
+    carData = carData.map((car) => ({
+      ...car,
+      selected: car.id === id,
+    }));
 
-    carData.sort((a, b) => {
-      if (a.selected) return -1;
-      if (b.selected) return 1;
-      return 0;
-    });
+    fields.selectedCar = id;
+
+    carData.sort((a, b) => (a.selected ? -1 : b.selected ? 1 : 0));
   };
 </script>
 
