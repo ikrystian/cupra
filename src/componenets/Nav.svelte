@@ -25,8 +25,8 @@
       {/each}
     </ul>
     <div class="mobile-menu-buttons">
-      <a href="#contact" class="btn btn--primary">Zapytaj o ofertę</a>
-      <a href="#contact" class="btn btn--secondary">Umów na jazdę próbną</a>
+      <a href="/" class="btn btn--primary">Zapytaj o ofertę</a>
+      <a href="/" class="btn btn--secondary">Umów na jazdę próbną</a>
     </div>
   </nav>
 {/if}
