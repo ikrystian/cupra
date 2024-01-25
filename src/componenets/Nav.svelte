@@ -1,6 +1,6 @@
 <script>
   const navItems = ["Samochody", "Jazda próbna", "Oferta", "Salony Cupra"];
-  export let showNav;  
+  export let showNav;
 </script>
 
 {#if navItems.length > 0}
@@ -24,6 +24,10 @@
         </li>
       {/each}
     </ul>
+    <div class="mobile-menu-buttons">
+      <a href="#contact" class="btn btn--primary">Zapytaj o ofertę</a>
+      <a href="#contact" class="btn btn--secondary">Umów na jazdę próbną</a>
+    </div>
   </nav>
 {/if}
 
@@ -38,9 +42,29 @@
       z-index: 2;
       background-color: var(--color-11);
       bottom: 0;
-      
+
       &.active {
         display: block;
+      }
+
+      .mobile-menu-buttons {
+        display: flex;
+        gap: 2.4rem;
+        flex-wrap: wrap;
+        margin-top: 2.4rem;
+
+        a {
+          justify-content: center;
+          flex: 1 1 auto;
+
+          &.btn--primary {
+            border: 1px solid var(--color-12);
+          }
+
+          &.btn--secondary {
+            color: var(--color-11)
+          }
+        }
       }
     }
 
@@ -64,11 +88,17 @@
     }
   }
 
+  @media screen and (min-width: 768px) {
+    nav .mobile-menu-buttons {
+        display: none;
+      }
+  }
+
   @media screen and (min-width: 1230px) {
     nav {
       display: flex;
       align-items: center;
-
+      
       ul {
         display: flex;
         list-style: none;
