@@ -87,37 +87,39 @@
   Swiper.use([Autoplay, Navigation]);
 </script>
 
-<div class="slider">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      {#each slides as slide}
-        <div class="swiper-slide">
-          <h2>{slide.title}</h2>
-          <img loading="lazy" src={slide.image} alt="" />
-          <p>{slide.description}</p>
-          <div class="slider__boxes">
-            <div style="max-width: 140px;">
-              <span>{slide.leasingInfo}</span>
+<section>
+  <div class="slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {#each slides as slide}
+          <div class="swiper-slide">
+            <h2>{slide.title}</h2>
+            <img loading="lazy" src={slide.image} alt="" />
+            <p>{slide.description}</p>
+            <div class="slider__boxes">
+              <div style="max-width: 140px;">
+                <span>{slide.leasingInfo}</span>
+              </div>
+              <div>
+                <span>Rata netto/mies. od*</span>
+                <strong>{slide.netRate}</strong>
+              </div>
+              <div>
+                <span>Cena brutto już od</span>
+                <strong>{slide.price}</strong>
+              </div>
             </div>
-            <div>
-              <span>Rata netto/mies. od*</span>
-              <strong>{slide.netRate}</strong>
-            </div>
-            <div>
-              <span>Cena brutto już od</span>
-              <strong>{slide.price}</strong>
-            </div>
+            <a href="#contact" class="slider__button btn btn--secondary"
+              >Umow jazdę próbna</a
+            >
           </div>
-          <a href="#contact" class="slider__button btn btn--secondary"
-            >Umow jazdę próbna</a
-          >
-        </div>
-      {/each}
+        {/each}
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
-</div>
+</section>
 
 <style lang="scss">
   @import "swiper/swiper-bundle.css";
@@ -146,11 +148,11 @@
       filter: grayscale(1) blur(2px);
     }
 
-      &:hover {
-        img {
-          transform: scale(1.15);
-        }
+    &:hover {
+      img {
+        transform: scale(1.15);
       }
+    }
 
     img {
       margin-bottom: 3.8rem;

@@ -10,6 +10,27 @@
   import cupra5 from "./assets/cupra-5.webp";
   import Footer from "./componenets/Footer.svelte";
   import Contact from "./componenets/Contact.svelte";
+
+  const rows = [
+    {
+      title: "Technologia",
+      description:
+        "Poczuj pełna wolność jazdy dzieki licznym innowacjom.",
+      image: cupra3,
+    },
+    {
+      title: "Potęga Designu",
+      description:
+        "Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.",
+      image: cupra4,
+    },
+    {
+      title: "Design wnętrza",
+      description:
+        "Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu CUPRY.",
+      image: cupra5,
+    }
+  ]
 </script>
 
 <Header />
@@ -56,52 +77,29 @@
   </div>
 </section>
 
-<section>
+
   <Slider />
-</section>
+
 
 <section class="dark-section">
   <div class="container">
+    {#each rows as row}
     <div class="dark-section__row dark-row-section">
       <figure class="dark-row-section__figure">
         <img
           loading="lazy"
-          src={cupra3}
+          src="{row.image}"
           alt=""
           class="dark-row-section__image"
         />
       </figure>
       <div class="dark-section__content-box dark-row-section__content-box">
-        <span>Technologia</span>
-        <h2>Poczuj pełna wolność jazdy dzieki licznym innowacjom.</h2>
+        <span>{row.title}</span>
+        <h2>{row.description}</h2>
         <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
       </div>
     </div>
-    <div class="dark-section__row dark-row-section">
-      <figure class="dark-row-section__figure">
-        <img loading="lazy" src={cupra4} alt="" class="dark-row-section__image" />
-      </figure>
-      <div class="dark-section__content-box">
-        <span>Potęga Designu</span>
-        <h2>
-          Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.
-        </h2>
-        <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
-      </div>
-    </div>
-    <div class="dark-section__row dark-row-section">
-      <figure class="dark-row-section__figure">
-        <img loading="lazy" src={cupra5} alt="" class="dark-row-section__image" />
-      </figure>
-      <div class="dark-section__content-box">
-        <span>Design wnętrza</span>
-        <h2>
-          Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu CUPRY.
-        </h2>
-        <a href="#contact" class="btn btn--darker">Umów jazdę próbną</a>
-      </div>
-    </div>
-  </div>
+    {/each}
 </section>
 
 <Contact />
